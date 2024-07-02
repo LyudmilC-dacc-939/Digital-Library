@@ -31,7 +31,7 @@ public class HomePanel extends BasePanel {
         bookSearchButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                //todo add separate class for each API in the action performed methods
+                frame.mainCoordinator.moveToGeneralSearchPanel();
             }
         });
         add(bookSearchButton);
@@ -42,7 +42,7 @@ public class HomePanel extends BasePanel {
         workAndEditionButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //todo add coordinator wiring
             }
         });
         add(workAndEditionButton);
@@ -53,7 +53,7 @@ public class HomePanel extends BasePanel {
         myBooksButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //todo add coordinator wiring
             }
         });
         add(myBooksButton);
@@ -64,7 +64,7 @@ public class HomePanel extends BasePanel {
         authorsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //todo add coordinator wiring
             }
         });
         add(authorsButton);
@@ -75,7 +75,7 @@ public class HomePanel extends BasePanel {
         subjectsButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+//todo add coordinator wiring
             }
         });
         add(subjectsButton);
@@ -86,7 +86,7 @@ public class HomePanel extends BasePanel {
         searchInsideButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+//todo add coordinator wiring
             }
         });
         add(searchInsideButton);
@@ -97,7 +97,7 @@ public class HomePanel extends BasePanel {
         searchByIdentifierButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+//todo add coordinator wiring
             }
         });
         add(searchByIdentifierButton);
@@ -108,7 +108,7 @@ public class HomePanel extends BasePanel {
         coversButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+//todo add coordinator wiring
             }
         });
         add(coversButton);
@@ -119,7 +119,7 @@ public class HomePanel extends BasePanel {
         recentChangesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+//todo add coordinator wiring
             }
         });
         add(recentChangesButton);

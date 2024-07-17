@@ -12,7 +12,11 @@ public class User {
     private String eMail;
     private LocalDate date;
 
-    public User(String username, String firstName, String lastName, String password, String eMail) {
+    public User(String username,
+                String firstName,
+                String lastName,
+                String password,
+                String eMail) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;

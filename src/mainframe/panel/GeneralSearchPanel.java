@@ -2,6 +2,7 @@ package mainframe.panel;
 
 import helper.UIPersonalization;
 import mainframe.MainFrame;
+import mainframe.panel.details.DetailsCoordinator;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -12,6 +13,7 @@ public class GeneralSearchPanel extends BasePanel {
     public GeneralSearchPanel(final MainFrame frame) {
         super(frame);
         UIPersonalization uiPersonalization = new UIPersonalization();
+        DetailsCoordinator detailsCoordinator = new DetailsCoordinator(frame);
 
         JButton searchByQuery = new JButton("General Search");
         uiPersonalization.setJButton(searchByQuery, 25);
@@ -19,7 +21,7 @@ public class GeneralSearchPanel extends BasePanel {
         searchByQuery.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                frame.mainCoordinator.moveToDetailsGeneralSearch();
+                detailsCoordinator.moveToDetailsGeneralSearch();
             }
         });
         add(searchByQuery);

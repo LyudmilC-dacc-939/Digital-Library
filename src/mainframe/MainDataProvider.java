@@ -1,5 +1,8 @@
 package mainframe;
 
+import api.Docs;
+import api.GeneralSearchResponse;
+import helper.MessageWindow;
 import model.Book;
 import model.User;
 import repository.UserDatabase;
@@ -34,14 +37,14 @@ public class MainDataProvider {
 
     public void fetchJobs(String location, String industry, String tag) {
         try {
-            APIResponse response = APIService.fetchJobs(location, industry, tag);
-            jobs = new ArrayList<Job>(response.getJobs());
+            GeneralSearchResponse response = GeneralSearchResponse.fetchJobs(location, industry, tag);
+            books = new ArrayList<Book>(response.getJobs());
             loadBooksModel();
         } catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
-            jobs = new ArrayList<>();
+            books = new ArrayList<>();
             loadBooksModel();
-            MessageWindow.popUpErrorMessage("Please enter a valid tag!");
+            MessageWindow.popUpErrorMessage();
         }
     }
 
@@ -62,15 +65,16 @@ public class MainDataProvider {
         }
     }
 
-    private void addBookRow(Book book) {
-        String[] row = new String[3];
-        row[0] = job.getCompanyName();
-        row[1] = job.getJobTitle();
-        row[2] = job.getJobGeo();
-        jobsTableModel.addRow(row);
+    private void addBookRow(Docs docs) {
+        String[] row = new String[4];
+        row[0] = docs.getTitle();
+        row[1] = docs.getAuthor_name();
+        row[2] = String.valueOf(docs.getPublish_date());
+        row[3] = String.valueOf(docs.getSubject());
+        booksTableModel.addRow(row);
     }
 
-    public Job getJobByIndex(int index) {
-        return jobs.get(index);
+    public Book getBookByIndex(int index) {
+        return books.get(index);
     }
 }

@@ -22,7 +22,7 @@ public class DetailsGeneralSearchPanel extends BasePanel {
         frame.mainDataProvider.setBooksTableModel(booksTableModel);
         booksTable = new JTable(booksTableModel);
         //Table Scroll
-        JScrollPane tableScrollPane = new JScrollPane(jobsTable);
+        JScrollPane tableScrollPane = new JScrollPane(booksTable);
         tableScrollPane.setBounds(0, 70, frame.getWidth() - 10, frame.getHeight() - 100);
         add(tableScrollPane);
 

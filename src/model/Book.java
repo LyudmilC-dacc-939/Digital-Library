@@ -2,18 +2,22 @@ package model;
 
 import api.Docs;
 
-import java.util.List;
-
 public class Book {
     private Integer numFound;
     private Integer start;
     private Boolean numFoundExact;
-    private List<Docs> docs;
+    private Docs docs;
     private Integer num_found;
     private String q;
     private Integer offset = null;
 
-    public Book(Integer numFound, Integer start, Boolean numFoundExact, List<Docs> docs, Integer num_found, String q, Integer offset) {
+    public Book(Integer numFound,
+                Integer start,
+                Boolean numFoundExact,
+                Docs docs,
+                Integer num_found,
+                String q,
+                Integer offset) {
         this.numFound = numFound;
         this.start = start;
         this.numFoundExact = numFoundExact;
@@ -50,11 +54,11 @@ public class Book {
         this.numFoundExact = numFoundExact;
     }
 
-    public List<Docs> getDocs() {
+    public Docs getDocs() {
         return docs;
     }
 
-    public void setDocs(List<Docs> docs) {
+    public void setDocs(Docs docs) {
         this.docs = docs;
     }
 

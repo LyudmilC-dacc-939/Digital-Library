@@ -1,6 +1,7 @@
 package api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import model.Book;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -8,7 +9,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class GeneralSearchRequest {
-       public static GeneralSearchResponse fetchGeneralSearch(String searchQuery) throws IOException {
+       public static Book fetchGeneralSearch(String searchQuery) throws IOException {
             String urlString = String.format(
                     "https://openlibrary.org/search.json?q=%s&fields=key,title,author_name,editions,editions.key,editions.title,editions.ebook_access,editions.language",
                     searchQuery.trim());
@@ -21,8 +22,6 @@ public class GeneralSearchRequest {
             InputStream responseStream = connection.getInputStream();
             ObjectMapper mapper = new ObjectMapper();
 
-            GeneralSearchResponse generalSearchResponse = mapper.readValue(responseStream, GeneralSearchResponse.class);
-
-            return generalSearchResponse;
+            return mapper.readValue(responseStream, Book.class);
         }
 }

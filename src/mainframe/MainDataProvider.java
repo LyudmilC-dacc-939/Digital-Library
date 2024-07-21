@@ -1,7 +1,6 @@
 package mainframe;
 
 import api.Docs;
-import api.GeneralSearchResponse;
 import helper.MessageWindow;
 import model.Book;
 import model.User;
@@ -14,6 +13,17 @@ public class MainDataProvider {
     private ArrayList<User> users = UserDatabase.fetchUsers();
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
+    private Book book;
+
+    public MainDataProvider(ArrayList<User> users,
+                            DefaultTableModel booksTableModel,
+                            ArrayList<Book> books,
+                            Book book) {
+        this.users = users;
+        this.booksTableModel = booksTableModel;
+        this.books = books;
+        this.book = book;
+    }
 
     public MainDataProvider() {
     }
@@ -37,7 +47,7 @@ public class MainDataProvider {
 
     public void fetchJobs(String location, String industry, String tag) {
         try {
-            GeneralSearchResponse response = GeneralSearchResponse.fetchJobs(location, industry, tag);
+            Book response = Book.fetchJobs(location, industry, tag);
             books = new ArrayList<Book>(response.getJobs());
             loadBooksModel();
         } catch (Exception e) {
@@ -51,26 +61,26 @@ public class MainDataProvider {
     public void loadBooksModel() {
 
         booksTableModel.setRowCount(0);//за да изчисти таблицата всеки път след викането и, а не да дублира
-        for (Book book : books) {
+        for (Book book: books) {
             addBookRow(book);
         }
     }
 
-    public void searchJob(String searchedUser) {
-        jobsTableModel.setRowCount(0);
-        for (Job job : jobs) {
-            if (job.getJobTitle().toLowerCase().contains(searchedUser.toLowerCase())) {
-                addBookRow(job);
+    public void searchQuery(String searchedBook) {
+        booksTableModel.setRowCount(0);
+        for (Book book: books) {
+            if (book.getQ().toLowerCase().equals(searchedBook.toLowerCase())) {
+                addBookRow(book);
             }
         }
     }
 
-    private void addBookRow(Docs docs) {
+    private void addBookRow(Book book) {
         String[] row = new String[4];
-        row[0] = docs.getTitle();
-        row[1] = docs.getAuthor_name();
-        row[2] = String.valueOf(docs.getPublish_date());
-        row[3] = String.valueOf(docs.getSubject());
+        row[0] = book.getDocs().getTitle();
+        row[1] = book.getDocs().getAuthor_name();
+        row[2] = String.valueOf(book.getDocs().getPublish_date());
+        row[3] = String.valueOf(book.getDocs().getSubject());
         booksTableModel.addRow(row);
     }
 

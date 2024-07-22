@@ -1,7 +1,12 @@
 package helper;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextArea;
+import javax.swing.JTextField;
+import java.awt.Color;
+import java.awt.Font;
 
 public class UIPersonalization {
     private JLabel jLabel;
@@ -9,6 +14,7 @@ public class UIPersonalization {
     private JButton jButton;
     private JTextArea jTextArea;
     private JPasswordField jPasswordField;
+
     private final Color projectColor = new Color(240, 255, 173);
 
 

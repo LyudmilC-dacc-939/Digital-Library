@@ -1,12 +1,7 @@
 package helper;
 
-import javax.swing.JButton;
-import javax.swing.JLabel;
-import javax.swing.JPasswordField;
-import javax.swing.JTextArea;
-import javax.swing.JTextField;
-import java.awt.Color;
-import java.awt.Font;
+import javax.swing.*;
+import java.awt.*;
 
 public class UIPersonalization {
     private JLabel jLabel;
@@ -16,12 +11,17 @@ public class UIPersonalization {
     private JPasswordField jPasswordField;
 
     private final Color projectColor = new Color(240, 255, 173);
+    private final Color projectColor2 = new Color(106, 143, 255);
+
 
 
     public Color getProjectColor() {
         return projectColor;
     }
 
+    public Color getProjectColor2() {
+        return projectColor2;
+    }
 
     public void setJLabel(JLabel jLabel) {
         jLabel.setFont(new Font("Serif", Font.PLAIN, 40));

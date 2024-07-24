@@ -1,5 +1,7 @@
 package mainframe.panel.details;
 
+import helper.ColumnColorRenderer;
+import helper.UIPersonalization;
 import mainframe.MainFrame;
 import mainframe.panel.BasePanel;
 
@@ -7,6 +9,9 @@ import javax.swing.*;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableColumn;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class DetailsGeneralSearchPanel extends BasePanel {
 
@@ -16,23 +21,42 @@ public class DetailsGeneralSearchPanel extends BasePanel {
 
     public DetailsGeneralSearchPanel(MainFrame frame) {
         super(frame);
+        UIPersonalization uiPersonalization = new UIPersonalization();
         String[] columns = {"Book Title", "Author's Name", "Date Of Release", "Subject"};
         booksTableModel = new DefaultTableModel();
         booksTableModel.setColumnIdentifiers(columns);
 
         frame.mainDataProvider.setBooksTableModel(booksTableModel);
         booksTable = new JTable(booksTableModel);
+        TableColumn tableColumn1 = booksTable.getColumnModel().getColumn(0);
+        tableColumn1.setCellRenderer(new ColumnColorRenderer(uiPersonalization.getProjectColor(), uiPersonalization.getProjectColor2()));
+        TableColumn tableColumn2 = booksTable.getColumnModel().getColumn(1);
+        tableColumn2.setCellRenderer(new ColumnColorRenderer(uiPersonalization.getProjectColor2(), uiPersonalization.getProjectColor()));
+        TableColumn tableColumn3 = booksTable.getColumnModel().getColumn(2);
+        tableColumn3.setCellRenderer(new ColumnColorRenderer(uiPersonalization.getProjectColor(), uiPersonalization.getProjectColor2()));
+        TableColumn tableColumn4 = booksTable.getColumnModel().getColumn(3);
+        tableColumn4.setCellRenderer(new ColumnColorRenderer(uiPersonalization.getProjectColor2(), uiPersonalization.getProjectColor()));
         //Table Scroll
         JScrollPane tableScrollPane = new JScrollPane(booksTable);
         tableScrollPane.setBounds(0, 70, frame.getWidth() - 10, frame.getHeight() - 100);
         add(tableScrollPane);
 
         searchField = new JTextField("General Search");
-        searchField.setBounds(0, 0, frame.getWidth(), 30);
+        searchField.setBounds(0, 0, frame.getWidth(), 70);
+        uiPersonalization.setJTextField(searchField, 30);
+        searchField.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                super.mouseClicked(e);
+                if (searchField.getText().equals("General Search")) {
+                    searchField.setText("");
+                }
+            }
+        });
         searchField.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                frame.mainDataProvider.searchQuery(searchField.getText());
+
             }
 
             @Override
@@ -48,5 +72,7 @@ public class DetailsGeneralSearchPanel extends BasePanel {
         add(searchField);
 
     }
+    //todo adding update button
+    //todo wiring request with update button OR document listener
 }
 

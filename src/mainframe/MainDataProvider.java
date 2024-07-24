@@ -34,7 +34,6 @@ public class MainDataProvider {
     public boolean loginUser(String username, String password) {
         for (User user : this.users) {
             if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
-
                 return true;
             }
         }
@@ -61,8 +60,9 @@ public class MainDataProvider {
         }
     }
 
+    //todo fix book.getDocs logic
     public void loadBooksModel() {
-        booksTableModel.setRowCount(0);//за да изчисти таблицата всеки път след викането и, а не да дублира
+        booksTableModel.setRowCount(0);
         for (Docs doc : book.getDocs()) {
             addBookRow(doc);
         }

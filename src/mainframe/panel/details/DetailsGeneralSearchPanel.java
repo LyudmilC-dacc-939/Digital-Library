@@ -10,6 +10,8 @@ import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableColumn;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
@@ -42,8 +44,8 @@ public class DetailsGeneralSearchPanel extends BasePanel {
         add(tableScrollPane);
 
         searchField = new JTextField("General Search");
-        searchField.setBounds(0, 0, frame.getWidth(), 70);
-        uiPersonalization.setJTextField(searchField, 30);
+        searchField.setBounds(0, 0, 600, 70);
+        uiPersonalization.setJTextField(searchField, 35);
         searchField.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent e) {
@@ -71,8 +73,19 @@ public class DetailsGeneralSearchPanel extends BasePanel {
         });
         add(searchField);
 
+        JButton updateButton = new JButton("Search");
+        uiPersonalization.setJButton(updateButton, 40);
+        updateButton.setBounds(600, 0, 200, 70);
+        updateButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String textSearch = searchField.getText();
+                frame.mainDataProvider.fetchBooks(textSearch);
+                frame.mainDataProvider.loadBooksModel();
+            }
+        });
+        add(updateButton);
+
     }
-    //todo adding update button
-    //todo wiring request with update button OR document listener
 }
 

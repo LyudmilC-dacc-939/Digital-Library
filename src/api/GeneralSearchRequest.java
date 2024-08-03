@@ -10,9 +10,10 @@ import java.net.URL;
 
 public class GeneralSearchRequest {
     public static Book fetchGeneralSearch(String searchQuery) throws IOException {
+        String formattedStringInput = searchQuery.trim().replaceAll("\\s","+");
         String urlString = String.format(
                 "https://openlibrary.org/search.json?q=%s",
-                searchQuery.trim());
+                formattedStringInput);
         //"https://openlibrary.org/search.json?q=%s&fields=key,title,author_name,editions,editions.key,editions.title,editions.ebook_access,editions.language",
         URL url = new URL(urlString.toLowerCase());
         HttpURLConnection connection = (HttpURLConnection) url.openConnection();

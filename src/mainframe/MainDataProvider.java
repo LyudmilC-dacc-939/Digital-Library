@@ -15,16 +15,18 @@ public class MainDataProvider {
     private ArrayList<User> users = UserDatabase.fetchUsers();
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
-    private Book book;
     private List<Docs> docs;
+    private Book book;
 
     public MainDataProvider(ArrayList<User> users,
                             DefaultTableModel booksTableModel,
                             ArrayList<Book> books,
+                            List<Docs> docs,
                             Book book) {
         this.users = users;
         this.booksTableModel = booksTableModel;
         this.books = books;
+        this.docs = docs;
         this.book = book;
     }
 
@@ -40,9 +42,7 @@ public class MainDataProvider {
         return false;
     }
 
-    //todo fix code below
     public MainDataProvider setBooksTableModel(DefaultTableModel booksTableModel) {
-
         this.booksTableModel = booksTableModel;
         return this;
     }
@@ -55,7 +55,7 @@ public class MainDataProvider {
         } catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
             docs = new ArrayList<>();
-            loadBooksModel();
+            //loadBooksModel();
             MessageWindow.popUpErrorMessage();
         }
     }
@@ -70,8 +70,9 @@ public class MainDataProvider {
 
     public void searchQuery(String searchedBook) {
         booksTableModel.setRowCount(0);
+        String formattedInput = searchedBook.trim();
         for (Docs doc : book.getDocs()) {
-            if (book.getQ().toLowerCase().equals(searchedBook.toLowerCase())) {
+            if (book.getQ().toLowerCase().equals(formattedInput.toLowerCase())) {
                 addBookRow(doc);
             }
         }

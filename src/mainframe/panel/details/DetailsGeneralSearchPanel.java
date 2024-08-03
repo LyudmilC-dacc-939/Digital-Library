@@ -4,6 +4,7 @@ import helper.ColumnColorRenderer;
 import helper.UIPersonalization;
 import mainframe.MainFrame;
 import mainframe.panel.BasePanel;
+import model.Book;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;

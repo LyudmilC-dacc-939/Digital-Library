@@ -1,6 +1,5 @@
 package mainframe;
 
-import api.Docs;
 import api.GeneralSearchRequest;
 import helper.MessageWindow;
 import model.Book;
@@ -15,18 +14,15 @@ public class MainDataProvider {
     private ArrayList<User> users = UserDatabase.fetchUsers();
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
-    private List<Docs> docs;
     private Book book;
 
     public MainDataProvider(ArrayList<User> users,
                             DefaultTableModel booksTableModel,
                             ArrayList<Book> books,
-                            List<Docs> docs,
                             Book book) {
         this.users = users;
         this.booksTableModel = booksTableModel;
         this.books = books;
-        this.docs = docs;
         this.book = book;
     }
 
@@ -50,11 +46,11 @@ public class MainDataProvider {
     public void fetchBooks(String query) {
         try {
             Book response = GeneralSearchRequest.fetchGeneralSearch(query);
-            docs = new ArrayList<>(response.getDocs());
+            List<Book.Doc> docs = new ArrayList<>(response.getDocs());
             loadBooksModel();
         } catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
-            docs = new ArrayList<>();
+            List<Book.Doc> docs = new ArrayList<>();
             //loadBooksModel();
             MessageWindow.popUpErrorMessage();
         }
@@ -63,27 +59,40 @@ public class MainDataProvider {
     //todo fix book.getDocs logic
     public void loadBooksModel() {
         booksTableModel.setRowCount(0);
-        for (Docs doc : book.getDocs()) {
-            addBookRow(doc);
+        for (Book.Doc doc : book.getDocs()) {
+            // Add the row with the required data from each book's Doc object
+            booksTableModel.addRow(new Object[]{
+                    doc.getTitle(),
+                    doc.getAuthor_name() != null ? String.join(", ", doc.getAuthor_name()) : "Unknown",
+                    doc.getFirst_publish_year(),
+                    doc.getEdition_count()
+            });
         }
     }
 
     public void searchQuery(String searchedBook) {
         booksTableModel.setRowCount(0);
-        String formattedInput = searchedBook.trim();
-        for (Docs doc : book.getDocs()) {
-            if (book.getQ().toLowerCase().equals(formattedInput.toLowerCase())) {
+        String formattedInput = searchedBook.trim().toLowerCase();
+
+        for (Book.Doc doc : book.getDocs()) {
+            // Check if title or author matches the search query
+            if (doc.getTitle().toLowerCase().contains(formattedInput) ||
+                    (doc.getAuthor_name() != null && doc.getAuthor_name().stream().anyMatch(author -> author.toLowerCase().contains(formattedInput)))) {
                 addBookRow(doc);
             }
         }
     }
 
-    private void addBookRow(Docs docs) {
+    private void addBookRow(Book.Doc doc) {
         String[] row = new String[4];
-        row[0] = docs.getTitle();
-        row[1] = docs.getAuthor_name();
-        row[2] = String.valueOf(docs.getPublish_date());
-        row[3] = String.valueOf(docs.getSubject());
+
+        row[0] = doc.getTitle() != null ? doc.getTitle() : "Unknown Title";
+        row[1] = (doc.getAuthor_name() != null && !doc.getAuthor_name().isEmpty())
+                ? String.join(", ", doc.getAuthor_name())
+                : "Unknown Author";
+        row[2] = doc.getFirst_publish_year() != 0 ? String.valueOf(doc.getFirst_publish_year()) : "Unknown Year";
+        row[3] = doc.getEdition_count() != 0 ? String.valueOf(doc.getEdition_count()) : "Unknown Edition Count";
+
         booksTableModel.addRow(row);
     }
 

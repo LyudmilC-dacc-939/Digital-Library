@@ -6,11 +6,20 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$MODULE_DIR$/../../APIs, Libraries/Java/Lombok/lombok-2.2.7.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-annotations-2.13.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../APIs, Libraries/Java/jackson, json/Jackson/jackson-annotations-2.13.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -19,7 +28,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../APIs, Libraries/Java/jackson, json/Jackson/jackson-core-2.13.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -28,7 +37,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/" />
+          <root url="jar://$MODULE_DIR$/../../APIs, Libraries/Java/jackson, json/Jackson/jackson-databind-2.13.1.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />

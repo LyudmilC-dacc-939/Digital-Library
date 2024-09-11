@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true">
+        <processor name="Lombok" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/../../APIs, Libraries/Java/Lombok/lombok-2.2.7.jar" />
+        </processorPath>
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel target="8" />
   </component>
 </project>

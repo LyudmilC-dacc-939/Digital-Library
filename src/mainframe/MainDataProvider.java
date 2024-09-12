@@ -45,22 +45,28 @@ public class MainDataProvider {
 
     public void fetchBooks(String query) {
         try {
-            Book response = GeneralSearchRequest.fetchGeneralSearch(query);
-            List<Book.Doc> docs = new ArrayList<>(response.getDocs());
-            loadBooksModel();
+            this.book = GeneralSearchRequest.fetchGeneralSearch(query);
+
+            if (this.book != null && this.book.getDocs() != null) {
+                loadBooksModel();
+            } else {
+                System.err.println("Error: Book or Docs are null.");
+                MessageWindow.popUpErrorMessage();
+            }
         } catch (Exception e) {
             System.out.println(e.getLocalizedMessage());
-            List<Book.Doc> docs = new ArrayList<>();
-            //loadBooksModel();
             MessageWindow.popUpErrorMessage();
         }
     }
 
-    //todo fix book.getDocs logic
     public void loadBooksModel() {
+        if (book == null || book.getDocs() == null) {
+            System.err.println("Error: Book or Docs are null.");
+            return;
+        }
+
         booksTableModel.setRowCount(0);
         for (Book.Doc doc : book.getDocs()) {
-            // Add the row with the required data from each book's Doc object
             booksTableModel.addRow(new Object[]{
                     doc.getTitle(),
                     doc.getAuthor_name() != null ? String.join(", ", doc.getAuthor_name()) : "Unknown",
@@ -69,6 +75,7 @@ public class MainDataProvider {
             });
         }
     }
+
 
     public void searchQuery(String searchedBook) {
         booksTableModel.setRowCount(0);

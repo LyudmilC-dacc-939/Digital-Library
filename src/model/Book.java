@@ -1,7 +1,10 @@
 package model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
 import java.util.List;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Book {
     private int start;
     private int numFound;
@@ -31,6 +34,7 @@ public class Book {
         this.docs = docs;
     }
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
     public static class Doc {
         private int cover_i;
         private boolean has_fulltext;
@@ -43,7 +47,6 @@ public class Book {
         private List<String> author_key;
         private boolean public_scan_b;
 
-        // Getters and Setters
         public int getCover_i() {
             return cover_i;
         }

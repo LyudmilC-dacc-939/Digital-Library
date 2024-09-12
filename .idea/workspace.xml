@@ -4,51 +4,6 @@
     <list default="true" id="f652b2a8-88af-4efe-a479-ec6ed291ab81" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bar System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Bar System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/MainDigitalLibrary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/api/Docs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/api/GeneralSearchRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/ColumnColorRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/MessageWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/UIPersonalization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/Validation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainCoordinator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainDataProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/BasePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsCoordinator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/repository/UserDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/Docs.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/mainframe/MainDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainframe/MainDataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Book.java" afterDir="false" />
     </list>
@@ -67,11 +22,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/mainframe/MainDataProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+            <state relative-caret-position="475">
+              <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/mainframe/panel/details/DetailsGeneralSearchPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="87" column="26" lean-forward="true" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/api/GeneralSearchRequest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helper/ColumnColorRenderer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/helper/MessageWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/model/Book.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -163,8 +175,8 @@
         <option value="$PROJECT_DIR$/src/api/GeneralSearchRequest.java" />
         <option value="$PROJECT_DIR$/src/mainframe/panel/details/DetailsGeneralSearchPanel.java" />
         <option value="$PROJECT_DIR$/src/api/Doc.java" />
-        <option value="$PROJECT_DIR$/src/model/Book.java" />
         <option value="$PROJECT_DIR$/src/mainframe/MainDataProvider.java" />
+        <option value="$PROJECT_DIR$/src/model/Book.java" />
       </list>
     </option>
   </component>
@@ -253,15 +265,6 @@
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
-            <path>
-              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-              <item name="JShell Console" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -283,10 +286,10 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../APIs, Libraries/Java/Lombok/lombok-2.2.7.jar" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="project.validation" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -384,11 +387,12 @@
       <workItem from="1725500172403" duration="1195000" />
       <workItem from="1725984068745" duration="6207000" />
       <workItem from="1726031321714" duration="2853000" />
+      <workItem from="1726086934261" duration="5619000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="206752000" />
+    <option name="totallyTimeSpent" value="212371000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -403,7 +407,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.23355705" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.23691276" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -412,7 +416,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50141644" side_tool="true" weight="0.23355705" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2592068" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2592068" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -447,12 +451,6 @@
           <line>84</line>
           <properties />
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/mainframe/panel/details/DetailsGeneralSearchPanel.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/mainframe/MainDataProvider.java</url>
@@ -499,16 +497,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/helper/AlternateRowColorRenderer.java" />
-    <entry file="file://$PROJECT_DIR$/src/helper/ColumnColorRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainframe/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -614,64 +602,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/ext/Java7Support.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#573#574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/AnnotationIntrospector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/util/LRUMap.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="109" selection-start-line="109" selection-end-line="109" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/cfg/BaseSettings.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainframe/panel/details/DetailsGeneralSearchPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="84" column="39" selection-start-line="84" selection-start-column="39" selection-end-line="84" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/helper/MessageWindow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/ext/Java7Support.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/AnnotationIntrospector.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/util/LRUMap.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/introspect/JacksonAnnotationIntrospector.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/cfg/BaseSettings.class" />
     <entry file="file://$PROJECT_DIR$/src/mainframe/panel/details/DetailsCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -679,20 +614,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21352">
-          <caret line="1473" selection-start-line="1473" selection-end-line="1473" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/ObjectCodec.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/ObjectMapper.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/ObjectCodec.class" />
     <entry file="file://$PROJECT_DIR$/src/api/Doc.java" />
     <entry file="file://$PROJECT_DIR$/src/repository/UserDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -714,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Book.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/mainframe/MainCoordinator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -731,30 +647,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/TreeCodec.class">
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/TreeCodec.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/Base64Variants.class" />
+    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/type/TypeFactory.class" />
+    <entry file="file://$PROJECT_DIR$/Bar System.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
+        <state relative-caret-position="-203" />
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/Base64Variants.class">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/helper/ColumnColorRenderer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="340">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
           <folding>
-            <element signature="e#734#735#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/type/TypeFactory.class">
+    <entry file="file://$PROJECT_DIR$/src/helper/MessageWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1683">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="e#5012#5013#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
@@ -768,18 +685,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Bar System.iml">
+    <entry file="file://$PROJECT_DIR$/src/mainframe/panel/details/DetailsGeneralSearchPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203" />
+        <state relative-caret-position="288">
+          <caret line="87" column="26" lean-forward="true" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/mainframe/MainDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+        <state relative-caret-position="475">
+          <caret line="59" column="5" lean-forward="true" selection-start-line="59" selection-start-column="5" selection-end-line="59" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Book.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

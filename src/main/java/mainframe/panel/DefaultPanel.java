@@ -2,6 +2,7 @@ package mainframe.panel;
 
 import helper.MessageWindow;
 import helper.UIPersonalization;
+import lombok.RequiredArgsConstructor;
 import mainframe.MainFrame;
 
 import javax.swing.JButton;
@@ -15,6 +16,7 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
 
+@RequiredArgsConstructor
 public class DefaultPanel extends BasePanel {
     private JTextField usernameField;
     private JPasswordField passwordField;
@@ -83,17 +85,34 @@ public class DefaultPanel extends BasePanel {
     }
 
     private void loginAction() {
-        boolean isLogged = frame.mainDataProvider.loginUser(usernameField.getText(), passwordField.getText());
+        String username = usernameField.getText().trim();
+        char[] password = passwordField.getPassword();  // Use getPassword() to retrieve the password
+
+        if (username.isEmpty() || password.length == 0) {
+            MessageWindow.popUpErrorMessage("Username and password cannot be empty.");
+            return;
+        }
+        // Convert char[] to String securely when needed
+        String passwordStr = new String(password);
+
+        boolean isLogged = frame.mainDataProvider.loginUser(username, passwordStr);
+
+        java.util.Arrays.fill(password, '\0');
+        // Clear the char array after use
+
         if (isLogged) {
-            //The bottom two rows will guarantee that if the user decides to go back to the DefaultPanel,
-            //the username and password will be set as follows
-            usernameField.setText("Username...");
-            passwordField.setText("");
+            resetLoginFields();
             frame.mainCoordinator.moveToHomePanel();
         } else {
-            MessageWindow.popUpErrorMessage("Wrong username or password");
+            MessageWindow.popUpErrorMessage("Wrong username or password.");
         }
     }
+
+    private void resetLoginFields() {
+        usernameField.setText("Username...");
+        passwordField.setText("");
+    }
+
 
 
 }

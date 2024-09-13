@@ -2,6 +2,8 @@ package mainframe.panel;
 
 import helper.UIPersonalization;
 import helper.Validation;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 import mainframe.MainFrame;
 
 import javax.swing.JButton;
@@ -11,6 +13,8 @@ import javax.swing.JTextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+@Getter
+@RequiredArgsConstructor
 public class RegistrationPanel extends BasePanel {
     private JLabel usernameJLabel;
     private JTextField usernameTextField;
@@ -29,7 +33,7 @@ public class RegistrationPanel extends BasePanel {
     private JLabel validationErrorMessageLabel;
     private JLabel validationErrorMessageLabel2;
     private JLabel validationErrorMessageLabel3;
-    private UIPersonalization uiPersonalization = new UIPersonalization();
+    private final UIPersonalization uiPersonalization = new UIPersonalization();
 
     public RegistrationPanel(MainFrame frame) {
         super(frame);
@@ -135,19 +139,24 @@ public class RegistrationPanel extends BasePanel {
 
     private void registerAction() {
         Validation.isValidUsername(usernameTextField.getText(), validationErrorMessageLabel);
-        boolean username = Validation.isValidUsername(usernameTextField.getText(), validationErrorMessageLabel);
-        boolean firstAndLastName = Validation.isValidName(firstNameTextField.getText(), lastNameTextField.getText(), validationErrorMessageLabel);
-        if (username) {
+        boolean usernameValid = Validation.isValidUsername(usernameTextField.getText(), validationErrorMessageLabel);
+
+        boolean nameValid = Validation.isValidName(firstNameTextField.getText(), lastNameTextField.getText(), validationErrorMessageLabel);
+        if (usernameValid) {
             Validation.isValidName(firstNameTextField.getText(), lastNameTextField.getText(), validationErrorMessageLabel);
         }
-        Validation.isValidPassword(passwordTextField.getText(), repeatPasswordTextField.getText(), validationErrorMessageLabel2);
-        boolean password = Validation.isValidPassword(passwordTextField.getText(), repeatPasswordTextField.getText(), validationErrorMessageLabel2);
 
-        Validation.isValidEmail(emailAddressTextField.getText(), validationErrorMessageLabel3);
-        boolean eMail = Validation.isValidEmail(emailAddressTextField.getText(), validationErrorMessageLabel3);
-        if (username && firstAndLastName && password && eMail) {
+        char[] password = passwordTextField.getPassword();
+        char[] repeatPassword = repeatPasswordTextField.getPassword();
+        Validation.isValidPassword(new String(password), new String(repeatPassword), validationErrorMessageLabel2);
+        boolean passwordValid = Validation.isValidPassword(new String(password), new String(repeatPassword), validationErrorMessageLabel2);
+        boolean emailValid = Validation.isValidEmail(emailAddressTextField.getText(), validationErrorMessageLabel3);
+
+        // Move to home panel if all validations pass
+        if (usernameValid && nameValid && passwordValid && emailValid) {
             frame.mainCoordinator.moveToHomePanel();
         }
     }
+
 
 }

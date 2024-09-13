@@ -1,86 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="f652b2a8-88af-4efe-a479-ec6ed291ab81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Bar System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Bar System.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/META-INF/Bar System.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/MainDigitalLibrary.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/api/GeneralSearchRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/ColumnColorRenderer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/MessageWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/UIPersonalization.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/Validation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainCoordinator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainDataProvider.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainFrame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/BasePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsCoordinator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/Book$Doc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/Book.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Bar System/repository/UserDatabase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MainDigitalLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainDigitalLibrary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/GeneralSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GeneralSearchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/ColumnColorRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/ColumnColorRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/MessageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/MessageWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/UIPersonalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/UIPersonalization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helper/Validation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/Validation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/MainCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/MainCoordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/MainDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/MainDataProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/MainFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/MainFrame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/BasePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/BasePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/DefaultPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/DefaultPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/GeneralSearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/GeneralSearchPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/HomePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/RegistrationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/RegistrationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/details/DetailsCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/details/DetailsCoordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mainframe/panel/details/DetailsGeneralSearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mainframe/panel/details/DetailsGeneralSearchPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repository/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/repository/UserDatabase.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/out/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -91,6 +22,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/src">
           <activation />
         </task>
         <projects_view>
@@ -111,9 +45,6 @@
         </projects_view>
       </state>
     </system>
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="Bar System" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -225,8 +156,13 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="UPDATE_TYPE" value="REBASE" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -281,12 +217,6 @@
         <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
-  </component>
-  <component name="JsFlowSettings">
-    <service-enabled>true</service-enabled>
-    <exe-path />
-    <other-services-enabled>true</other-services-enabled>
-    <auto-save>true</auto-save>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -411,18 +341,6 @@
       <recent name="D:\Programs\Projects\Advance Academy\Bar System\src" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Gradle.Bar System [runMain]">
     <configuration name="Bar System [./gradlew wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
@@ -443,7 +361,10 @@
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Bar System [./gradlew wrapper --gradle-version 8.1]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -465,7 +386,10 @@
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Bar System [gradle wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -487,7 +411,10 @@
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Bar System [gradlew.bat wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -509,7 +436,10 @@
         </option>
         <option name="vmOptions" value="" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="Bar System [runMain]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -528,7 +458,10 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <list>
@@ -667,22 +600,18 @@
       <window_info anchor="right" id="Gradle" order="10" visible="true" weight="0.3295302" />
     </layout>
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
-  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/mainframe/panel/DefaultPanel.java</url>
           <line>84</line>
-          <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/mainframe/MainDataProvider.java</url>
           <line>30</line>
-          <properties class="main.java.mainframe.MainDataProvider" method="loginUser">
+          <properties class="mainframe.MainDataProvider">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="6" />

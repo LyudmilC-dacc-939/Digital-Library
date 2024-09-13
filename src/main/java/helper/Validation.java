@@ -1,4 +1,4 @@
-package main.java.helper;
+package helper;
 
 import javax.swing.JLabel;
 import java.awt.Color;

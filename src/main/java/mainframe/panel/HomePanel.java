@@ -1,9 +1,9 @@
-package main.java.mainframe.panel;
+package mainframe.panel;
 
-import main.java.helper.UIPersonalization;
-import main.java.mainframe.MainFrame;
+import helper.UIPersonalization;
+import mainframe.MainFrame;
 
-import javax.swing.*;
+import javax.swing.JButton;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

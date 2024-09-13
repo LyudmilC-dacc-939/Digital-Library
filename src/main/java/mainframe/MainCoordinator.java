@@ -1,12 +1,12 @@
-package main.java.mainframe;
+package mainframe;
 
-import main.java.mainframe.panel.DefaultPanel;
-import main.java.mainframe.panel.GeneralSearchPanel;
-import main.java.mainframe.panel.HomePanel;
-import main.java.mainframe.panel.RegistrationPanel;
+import mainframe.panel.DefaultPanel;
+import mainframe.panel.GeneralSearchPanel;
+import mainframe.panel.HomePanel;
+import mainframe.panel.RegistrationPanel;
 
 public class MainCoordinator {
-    private MainFrame frame;
+    private final MainFrame frame;
 
     public MainCoordinator(MainFrame frame) {
         this.frame = frame;

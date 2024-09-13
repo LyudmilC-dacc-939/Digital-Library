@@ -1,11 +1,14 @@
-package main.java.mainframe.panel.details;
+package mainframe.panel.details;
 
-import main.java.helper.ColumnColorRenderer;
-import main.java.helper.UIPersonalization;
-import main.java.mainframe.MainFrame;
-import main.java.mainframe.panel.BasePanel;
+import helper.ColumnColorRenderer;
+import helper.UIPersonalization;
+import mainframe.MainFrame;
+import mainframe.panel.BasePanel;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
+import javax.swing.JTextField;
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 import javax.swing.table.DefaultTableModel;

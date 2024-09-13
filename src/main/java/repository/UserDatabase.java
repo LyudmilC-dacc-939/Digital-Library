@@ -1,6 +1,6 @@
-package main.java.repository;
+package repository;
 
-import main.java.model.User;
+import model.User;
 
 import java.util.ArrayList;
 

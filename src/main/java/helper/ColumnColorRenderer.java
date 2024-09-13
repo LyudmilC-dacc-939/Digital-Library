@@ -1,8 +1,9 @@
-package main.java.helper;
+package helper;
 
-import javax.swing.*;
+import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
-import java.awt.*;
+import java.awt.Color;
+import java.awt.Component;
 
 public class ColumnColorRenderer extends DefaultTableCellRenderer {
     private Color backgroundColor;
@@ -13,7 +14,12 @@ public class ColumnColorRenderer extends DefaultTableCellRenderer {
         this.foregroundColor = foregroundColor;
     }
 
-    public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected, boolean hasFocus, int row, int column) {
+    public Component getTableCellRendererComponent(JTable table,
+                                                   Object value,
+                                                   boolean isSelected,
+                                                   boolean hasFocus,
+                                                   int row,
+                                                   int column) {
         Component cell = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
         cell.setBackground(backgroundColor);
         cell.setForeground(foregroundColor);

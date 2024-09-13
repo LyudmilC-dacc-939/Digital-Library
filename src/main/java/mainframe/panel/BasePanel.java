@@ -1,7 +1,7 @@
-package main.java.mainframe.panel;
+package mainframe.panel;
 
-import main.java.helper.UIPersonalization;
-import main.java.mainframe.MainFrame;
+import helper.UIPersonalization;
+import mainframe.MainFrame;
 
 import javax.swing.JPanel;
 

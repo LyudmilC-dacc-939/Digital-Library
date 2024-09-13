@@ -1,8 +1,8 @@
-package main.java.mainframe.panel;
+package mainframe.panel;
 
-import main.java.helper.MessageWindow;
-import main.java.helper.UIPersonalization;
-import main.java.mainframe.MainFrame;
+import helper.MessageWindow;
+import helper.UIPersonalization;
+import mainframe.MainFrame;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -13,6 +13,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.util.Arrays;
 
 public class DefaultPanel extends BasePanel {
     private JTextField usernameField;
@@ -51,7 +52,7 @@ public class DefaultPanel extends BasePanel {
             @Override
             public void mousePressed(MouseEvent e) {
                 super.mousePressed(e);
-                if (!passwordField.getPassword().toString().isEmpty()) {
+                if (!Arrays.toString(passwordField.getPassword()).isEmpty()) {
                     passwordField.setText("");
                 }
             }

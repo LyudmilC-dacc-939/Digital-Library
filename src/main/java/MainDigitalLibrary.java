@@ -1,6 +1,5 @@
-package main.java;
 
-import main.java.mainframe.MainFrame;
+import mainframe.MainFrame;
 
 import java.awt.Color;
 

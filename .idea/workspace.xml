@@ -2,7 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f652b2a8-88af-4efe-a479-ec6ed291ab81" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Bar System.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Bar System.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/META-INF/Bar System.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/MainDigitalLibrary.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/api/GeneralSearchRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/ColumnColorRenderer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/MessageWindow.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/UIPersonalization.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/helper/Validation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainDataProvider.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/MainFrame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/BasePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/DefaultPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/GeneralSearchPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$11.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel$9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/HomePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/RegistrationPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsCoordinator.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/mainframe/panel/details/DetailsGeneralSearchPanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/Book$Doc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/Book.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/model/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Bar System/repository/UserDatabase.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MainDigitalLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MainDigitalLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/api/GeneralSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/GeneralSearchRequest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helper/ColumnColorRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/ColumnColorRenderer.java" afterDir="false" />
@@ -33,128 +82,113 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bar System" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Bar System" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Bar System" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/MainDataProvider.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/MainDigitalLibrary.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+            <state relative-caret-position="204">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../../APIs, Libraries/Java/Lombok/lombok-2.2.7.jar!/META-INF/gradle-plugins/name.remal.lombok.properties">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/MainDigitalLibrary.java">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+            <state relative-caret-position="142">
+              <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/panel/details/DetailsGeneralSearchPanel.java">
+        <entry file="file://$PROJECT_DIR$/Bar System.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/api/GeneralSearchRequest.java">
+        <entry file="file://$PROJECT_DIR$/gradlew">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gradlew.bat">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/helper/ColumnColorRenderer.java">
+        <entry file="file://$PROJECT_DIR$/gradle.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="75" column="13" lean-forward="true" selection-start-line="75" selection-start-column="13" selection-end-line="75" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2277#2278#0" expanded="true" />
-                <element signature="e#2316#2317#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/helper/MessageWindow.java">
+        <entry file="file://$PROJECT_DIR$/build/classes/java/main/main/java/MainDigitalLibrary.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-205">
-              <caret line="52" column="33" selection-start-line="52" selection-start-column="33" selection-end-line="52" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#709#710#0" expanded="true" />
-                <element signature="e#740#741#0" expanded="true" />
-                <element signature="e#789#790#0" expanded="true" />
-                <element signature="e#829#830#0" expanded="true" />
-                <element signature="e#862#863#0" expanded="true" />
-                <element signature="e#890#891#0" expanded="true" />
-                <element signature="e#933#934#0" expanded="true" />
-                <element signature="e#967#968#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1044#1045#0" expanded="true" />
-                <element signature="e#1103#1104#0" expanded="true" />
-                <element signature="e#1153#1154#0" expanded="true" />
-                <element signature="e#1215#1216#0" expanded="true" />
-                <element signature="e#1259#1260#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1328#1329#0" expanded="true" />
-                <element signature="e#1360#1361#0" expanded="true" />
-                <element signature="e#1411#1412#0" expanded="true" />
-                <element signature="e#1453#1454#0" expanded="true" />
-                <element signature="e#1481#1482#0" expanded="true" />
-                <element signature="e#1505#1506#0" expanded="true" />
-                <element signature="e#1539#1540#0" expanded="true" />
-                <element signature="e#1565#1566#0" expanded="true" />
-                <element signature="e#1599#1600#0" expanded="true" />
-                <element signature="e#1628#1629#0" expanded="true" />
-                <element signature="e#1673#1674#0" expanded="true" />
-                <element signature="e#1709#1710#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/model/Book.java">
+        <entry file="file://$PROJECT_DIR$/gradle-wrapper.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/mainframe/panel/details/DetailsCoordinator.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="17">
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -191,6 +225,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -240,6 +275,10 @@
         <option value="$PROJECT_DIR$/src/model/Book.java" />
         <option value="$PROJECT_DIR$/src/mainframe/MainDataProvider.java" />
         <option value="$PROJECT_DIR$/src/main/java/MainDigitalLibrary.java" />
+        <option value="$PROJECT_DIR$/settings.gradle" />
+        <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/gradle-wrapper.properties" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -267,72 +306,75 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="api" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
+              <item name="Bar System" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="mainframe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Bar System" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Bar System" type="b2602c69:ProjectViewProjectNode" />
@@ -342,6 +384,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="Course" />
     </panes>
   </component>
@@ -351,16 +395,20 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.gradle" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="helpers" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Programs\Projects\Advance Academy\Bar System\src\main\java" />
+      <recent name="D:\Programs\Projects\Advance Academy\Bar System\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -375,20 +423,128 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="main.java.MainDigitalLibrary" />
-      <module name="Bar System" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager" selected="Gradle.Bar System [runMain]">
+    <configuration name="Bar System [./gradlew wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="./gradlew" />
+            <option value="wrapper" />
+            <option value="--gradle-version" />
+            <option value="8.10" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
+    <configuration name="Bar System [./gradlew wrapper --gradle-version 8.1]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="./gradlew" />
+            <option value="wrapper" />
+            <option value="--gradle-version" />
+            <option value="8.1" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bar System [gradle wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="gradle" />
+            <option value="wrapper" />
+            <option value="--gradle-version" />
+            <option value="8.10" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bar System [gradlew.bat wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="gradlew.bat" />
+            <option value="wrapper" />
+            <option value="--gradle-version" />
+            <option value="8.10" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Bar System [runMain]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runMain" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.1]" />
+      <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.10]" />
+      <item itemvalue="Gradle.Bar System [gradle wrapper --gradle-version 8.10]" />
+      <item itemvalue="Gradle.Bar System [gradlew.bat wrapper --gradle-version 8.10]" />
+      <item itemvalue="Gradle.Bar System [runMain]" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Gradle.Bar System [runMain]" />
+        <item itemvalue="Gradle.Bar System [gradlew.bat wrapper --gradle-version 8.10]" />
+        <item itemvalue="Gradle.Bar System [gradle wrapper --gradle-version 8.10]" />
+        <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.10]" />
+        <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.1]" />
       </list>
     </recent_temporary>
   </component>
@@ -454,11 +610,15 @@
       <workItem from="1725984068745" duration="6207000" />
       <workItem from="1726031321714" duration="2853000" />
       <workItem from="1726086934261" duration="8864000" />
+      <workItem from="1726186073135" duration="816000" />
+      <workItem from="1726186922211" duration="8172000" />
+      <workItem from="1726233633956" duration="513000" />
+      <workItem from="1726234179939" duration="2549000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215616000" />
+    <option name="totallyTimeSpent" value="227666000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -472,27 +632,28 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22751679" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.2409396" />
+      <window_info id="Structure" order="1" sideWeight="0.50141644" side_tool="true" weight="0.2342282" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="UI Designer" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50141644" side_tool="true" weight="0.2342282" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2592068" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5467422" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.33569404" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" visible="true" weight="0.21529745" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49932885" weight="0.21529745" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Educational.CheckDetails" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50067115" side_tool="true" weight="0.21529745" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.19688386" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info active="true" anchor="bottom" id="Build" order="14" visible="true" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -503,6 +664,7 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Key Promoter X" order="9" weight="0.3295302" />
+      <window_info anchor="right" id="Gradle" order="10" visible="true" weight="0.3295302" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -520,7 +682,7 @@
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/mainframe/MainDataProvider.java</url>
           <line>30</line>
-          <properties class="mainframe.MainDataProvider" method="loginUser">
+          <properties class="main.java.mainframe.MainDataProvider" method="loginUser">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="6" />
@@ -529,17 +691,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Models/test.java" />
-    <entry file="file://$PROJECT_DIR$/src/Models/test.form" />
-    <entry file="file://$PROJECT_DIR$/src/Mainframe/mainframepanels/RegistrationGUI.form" />
-    <entry file="file://$PROJECT_DIR$/src/repository/userrr.java" />
-    <entry file="jar://$PROJECT_DIR$/../../Java/JDK 17/lib/src.zip!/java.desktop/java/awt/Component.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="6625" column="27" selection-start-line="6625" selection-start-column="27" selection-end-line="6625" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/api/GeneralSearchResponse.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/helper/Validation.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -552,26 +703,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/helper/AlternateRowColorRenderer.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="99" column="29" lean-forward="true" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/mainframe/panel/GeneralSearchPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="305">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/panel/RegistrationPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1887">
@@ -873,16 +1004,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/api/GeneralSearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../Java/JDK 17/lib/src.zip!/jdk.net/jdk/net/ExtendedSocketOptions.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -965,35 +1086,26 @@
     <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/TreeCodec.class" />
     <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-core-2.13.1.jar!/com/fasterxml/jackson/core/Base64Variants.class" />
     <entry file="jar://$PROJECT_DIR$/../../APIs/Java APIs/jackson, json/Jackson/jackson-databind-2.13.1.jar!/com/fasterxml/jackson/databind/type/TypeFactory.class" />
-    <entry file="file://$PROJECT_DIR$/Bar System.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203" />
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/jshell/jshell_console.snippet">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/ColumnColorRenderer.java">
+    <entry file="jar://$PROJECT_DIR$/../../APIs, Libraries/Java/Lombok/lombok-2.2.7.jar!/META-INF/gradle-plugins/name.remal.lombok.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/MainDataProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        <state relative-caret-position="425">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/helper/MessageWindow.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/MainFrame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/api/GeneralSearchRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1002,49 +1114,218 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/panel/details/DetailsGeneralSearchPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="86" column="26" lean-forward="true" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
+        <state relative-caret-position="1326">
+          <caret line="86" column="26" selection-start-line="86" selection-start-column="26" selection-end-line="86" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/ColumnColorRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/helper/MessageWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/Book.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2277#2278#0" expanded="true" />
-            <element signature="e#2316#2317#0" expanded="true" />
+            <element signature="e#281#282#0" expanded="true" />
+            <element signature="e#309#310#0" expanded="true" />
+            <element signature="e#348#349#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#445#446#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+            <element signature="e#634#635#0" expanded="true" />
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1173#1174#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1266#1267#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+            <element signature="e#1352#1353#0" expanded="true" />
+            <element signature="e#1413#1414#0" expanded="true" />
+            <element signature="e#1469#1470#0" expanded="true" />
+            <element signature="e#1510#1511#0" expanded="true" />
+            <element signature="e#1554#1555#0" expanded="true" />
+            <element signature="e#1613#1614#0" expanded="true" />
+            <element signature="e#1671#1672#0" expanded="true" />
+            <element signature="e#1707#1708#0" expanded="true" />
+            <element signature="e#1743#1744#0" expanded="true" />
+            <element signature="e#1789#1790#0" expanded="true" />
+            <element signature="e#1831#1832#0" expanded="true" />
+            <element signature="e#1879#1880#0" expanded="true" />
+            <element signature="e#1921#1922#0" expanded="true" />
+            <element signature="e#1985#1986#0" expanded="true" />
+            <element signature="e#2039#2040#0" expanded="true" />
+            <element signature="e#2085#2086#0" expanded="true" />
+            <element signature="e#2134#2135#0" expanded="true" />
+            <element signature="e#2203#2204#0" expanded="true" />
+            <element signature="e#2271#2272#0" expanded="true" />
+            <element signature="e#2305#2306#0" expanded="true" />
+            <element signature="e#2339#2340#0" expanded="true" />
+            <element signature="e#2381#2382#0" expanded="true" />
+            <element signature="e#2419#2420#0" expanded="true" />
+            <element signature="e#2458#2459#0" expanded="true" />
+            <element signature="e#2491#2492#0" expanded="true" />
+            <element signature="e#2537#2538#0" expanded="true" />
+            <element signature="e#2573#2574#0" expanded="true" />
+            <element signature="e#2620#2621#0" expanded="true" />
+            <element signature="e#2661#2662#0" expanded="true" />
+            <element signature="e#2723#2724#0" expanded="true" />
+            <element signature="e#2775#2776#0" expanded="true" />
+            <element signature="e#2819#2820#0" expanded="true" />
+            <element signature="e#2863#2864#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2984#2985#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/mainframe/MainDataProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../APIs, Libraries/Java/Lombok/lombok-2.2.7.jar!/META-INF/gradle-plugins/name.remal.lombok.properties">
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/gradle.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/api/GeneralSearchRequest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/java/main/main/java/model/Book.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#3260#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/java/main/main/java/mainframe/panel/HomePanel.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#5365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/MainDigitalLibrary.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="204">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bar System.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradlew.bat">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="14" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/classes/java/main/main/java/MainDigitalLibrary.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
         </state>
       </provider>
     </entry>
   </component>
+  <component name="gradleExecuteTaskHistory">
+    <option value="$PROJECT_DIR$" />
+    <option value="gradlew.bat wrapper --gradle-version 8.10" />
+    <option value="gradle wrapper --gradle-version 8.10" />
+    <option value="./gradlew wrapper --gradle-version 8.10" />
+    <option value="./gradlew wrapper --gradle-version 8.1" />
+    <option value="./gradlew build --stacktrace" />
+    <option value="./gradlew wrapper --gradle-version 7.6" />
+    <option value="build" />
+    <option value="clean" />
+  </component>
   <component name="masterDetails">
     <states>
+      <state key="ArquillianSettingsConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
@@ -1059,7 +1340,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited>Detection</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1099,6 +1380,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

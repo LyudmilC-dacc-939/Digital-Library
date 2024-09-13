@@ -1,10 +1,10 @@
-package main.java.mainframe;
+package mainframe;
 
-import main.java.api.GeneralSearchRequest;
-import main.java.helper.MessageWindow;
-import main.java.model.Book;
-import main.java.model.User;
-import main.java.repository.UserDatabase;
+import api.GeneralSearchRequest;
+import helper.MessageWindow;
+import model.Book;
+import model.User;
+import repository.UserDatabase;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
-package main.java.mainframe;
+package mainframe;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import java.awt.FlowLayout;
 
 public class MainFrame extends JFrame {
     public MainCoordinator mainCoordinator;

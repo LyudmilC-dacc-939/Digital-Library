@@ -1,10 +1,13 @@
-package main.java.mainframe.panel;
+package mainframe.panel;
 
-import main.java.helper.UIPersonalization;
-import main.java.helper.Validation;
-import main.java.mainframe.MainFrame;
+import helper.UIPersonalization;
+import helper.Validation;
+import mainframe.MainFrame;
 
-import javax.swing.*;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPasswordField;
+import javax.swing.JTextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 

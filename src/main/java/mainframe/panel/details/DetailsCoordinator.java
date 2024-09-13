@@ -1,6 +1,7 @@
-package main.java.mainframe.panel.details;
+package mainframe.panel.details;
 
-import main.java.mainframe.MainFrame;
+
+import mainframe.MainFrame;
 
 public class DetailsCoordinator {
     private MainFrame frame;

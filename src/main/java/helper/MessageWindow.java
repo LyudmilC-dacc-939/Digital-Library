@@ -1,10 +1,8 @@
-package main.java.helper;
+package helper;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 
 public class MessageWindow {
-    //тези два метода са статични за да могат да бъдат извиквани навсякъде в проекта, също така тук използваме
-    //Overload methods -- което са два или повече метода, с идентични имена и сходни фукнции, но с различни променливи
 
     public static void popUpErrorMessage(){
         JOptionPane.showMessageDialog(null, "Something is wrong", "Error in Code", JOptionPane.ERROR_MESSAGE);

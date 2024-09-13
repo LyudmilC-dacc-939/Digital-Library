@@ -1,7 +1,7 @@
-package main.java.api;
+package api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import main.java.model.Book;
+import model.Book;
 
 import java.io.IOException;
 import java.io.InputStream;

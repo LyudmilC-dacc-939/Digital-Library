@@ -1,25 +1,38 @@
-package mainframe;
+package org.digitallibrary.mainframe;
 
-import api.GeneralSearchRequest;
-import helper.MessageWindow;
-import model.Book;
-import model.User;
-import repository.UserDatabase;
+import lombok.Setter;
+import org.digitallibrary.api.GeneralSearchRequest;
+import org.digitallibrary.helper.MessageWindow;
+import org.digitallibrary.model.Book;
+import org.digitallibrary.model.OldUser;
+import org.digitallibrary.model.User;
+import org.digitallibrary.repository.UserDatabase;
+import org.digitallibrary.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 
+@Component
 public class MainDataProvider {
-    private ArrayList<User> users = UserDatabase.fetchUsers();
+    private ArrayList<OldUser> oldUsers = UserDatabase.fetchUsers();
+    @Setter
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
     private Book book;
 
-    public MainDataProvider(ArrayList<User> users,
+    @Autowired
+    private GeneralSearchRequest generalSearchRequest;
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public MainDataProvider(ArrayList<OldUser> oldUsers,
                             DefaultTableModel booksTableModel,
                             ArrayList<Book> books,
                             Book book) {
-        this.users = users;
+        this.oldUsers = oldUsers;
         this.booksTableModel = booksTableModel;
         this.books = books;
         this.book = book;
@@ -29,22 +42,17 @@ public class MainDataProvider {
     }
 
     public boolean loginUser(String username, String password) {
-        for (User user : this.users) {
-            if (user.getUsername().equals(username) && user.getPassword().equals(password)) {
+        for (OldUser oldUser : this.oldUsers) {
+            if (oldUser.getUsername().equals(username) && oldUser.getPassword().equals(password)) {
                 return true;
             }
         }
         return false;
     }
 
-    public MainDataProvider setBooksTableModel(DefaultTableModel booksTableModel) {
-        this.booksTableModel = booksTableModel;
-        return this;
-    }
-
     public void fetchBooks(String query) {
         try {
-            this.book = GeneralSearchRequest.fetchGeneralSearch(query);
+            this.book = generalSearchRequest.fetchGeneralSearch(query);
 
             if (this.book != null && this.book.getDocs() != null) {
                 loadBooksModel();
@@ -75,7 +83,6 @@ public class MainDataProvider {
         }
     }
 
-
     public void searchQuery(String searchedBook) {
         booksTableModel.setRowCount(0);
         String formattedInput = searchedBook.trim().toLowerCase();
@@ -104,5 +111,10 @@ public class MainDataProvider {
 
     public Book getBookByIndex(int index) {
         return books.get(index);
+    }
+
+    public String getUserEmail(String username) {
+        User user = userRepository.findByUsername(username);
+        return (user != null) ? user.getEmailAddress() : null;
     }
 }

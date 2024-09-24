@@ -1,9 +1,9 @@
-package mainframe.panel.details;
+package org.digitallibrary.mainframe.panel.details;
 
-import helper.ColumnColorRenderer;
-import helper.UIPersonalization;
-import mainframe.MainFrame;
-import mainframe.panel.BasePanel;
+import org.digitallibrary.helper.ColumnColorRenderer;
+import org.digitallibrary.helper.UIPersonalization;
+import org.digitallibrary.mainframe.MainFrame;
+import org.digitallibrary.mainframe.panel.BasePanel;
 
 import javax.swing.JButton;
 import javax.swing.JScrollPane;

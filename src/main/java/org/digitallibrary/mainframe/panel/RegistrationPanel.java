@@ -1,10 +1,14 @@
-package mainframe.panel;
+package org.digitallibrary.mainframe.panel;
 
-import helper.UIPersonalization;
-import helper.Validation;
+import org.digitallibrary.helper.UIPersonalization;
+import org.digitallibrary.helper.Validation;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
-import mainframe.MainFrame;
+import org.digitallibrary.mainframe.MainFrame;
+import org.digitallibrary.model.User;
+import org.digitallibrary.repository.UserRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -12,10 +16,14 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.time.Instant;
+import java.util.Arrays;
 
+@Component
 @Getter
 @RequiredArgsConstructor
 public class RegistrationPanel extends BasePanel {
+
     private JLabel usernameJLabel;
     private JTextField usernameTextField;
     private JLabel firstNameJLabel;
@@ -34,6 +42,9 @@ public class RegistrationPanel extends BasePanel {
     private JLabel validationErrorMessageLabel2;
     private JLabel validationErrorMessageLabel3;
     private final UIPersonalization uiPersonalization = new UIPersonalization();
+
+    @Autowired
+    private UserRepository userRepository;
 
     public RegistrationPanel(MainFrame frame) {
         super(frame);
@@ -152,10 +163,22 @@ public class RegistrationPanel extends BasePanel {
         boolean passwordValid = Validation.isValidPassword(new String(password), new String(repeatPassword), validationErrorMessageLabel2);
         boolean emailValid = Validation.isValidEmail(emailAddressTextField.getText(), validationErrorMessageLabel3);
 
-        // Move to home panel if all validations pass
         if (usernameValid && nameValid && passwordValid && emailValid) {
+            userRepository.save(newUser());
             frame.mainCoordinator.moveToHomePanel();
         }
+    }
+
+    private User newUser() {
+        User createdUser = new User();
+        createdUser.setDateCreated(Instant.now());
+        createdUser.setFirstName(firstNameTextField.getText());
+        createdUser.setLastName(lastNameTextField.getText());
+        createdUser.setUsername(usernameTextField.getText());
+        createdUser.setEmailAddress(emailAddressTextField.getText());
+        char [] password = passwordTextField.getPassword();
+        createdUser.setPassword(Arrays.toString(password));
+        return createdUser;
     }
 
 

@@ -1,9 +1,9 @@
-package mainframe;
+package org.digitallibrary.mainframe;
 
-import mainframe.panel.DefaultPanel;
-import mainframe.panel.GeneralSearchPanel;
-import mainframe.panel.HomePanel;
-import mainframe.panel.RegistrationPanel;
+import org.digitallibrary.mainframe.panel.DefaultPanel;
+import org.digitallibrary.mainframe.panel.GeneralSearchPanel;
+import org.digitallibrary.mainframe.panel.HomePanel;
+import org.digitallibrary.mainframe.panel.RegistrationPanel;
 
 public class MainCoordinator {
     private final MainFrame frame;

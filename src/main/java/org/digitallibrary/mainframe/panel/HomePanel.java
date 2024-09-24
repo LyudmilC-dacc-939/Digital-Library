@@ -1,7 +1,7 @@
-package mainframe.panel;
+package org.digitallibrary.mainframe.panel;
 
-import helper.UIPersonalization;
-import mainframe.MainFrame;
+import org.digitallibrary.helper.UIPersonalization;
+import org.digitallibrary.mainframe.MainFrame;
 
 import javax.swing.JButton;
 import java.awt.event.ActionEvent;

@@ -1,8 +1,8 @@
-package mainframe.panel;
+package org.digitallibrary.mainframe.panel;
 
-import helper.UIPersonalization;
+import org.digitallibrary.helper.UIPersonalization;
 import lombok.NoArgsConstructor;
-import mainframe.MainFrame;
+import org.digitallibrary.mainframe.MainFrame;
 
 import javax.swing.JPanel;
 

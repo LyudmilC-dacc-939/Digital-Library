@@ -1,4 +1,4 @@
-package mainframe;
+package org.digitallibrary.mainframe;
 
 import javax.swing.JFrame;
 import java.awt.FlowLayout;

@@ -1,10 +1,10 @@
-package mainframe.panel.details;
+package org.digitallibrary.mainframe.panel.details;
 
 
-import mainframe.MainFrame;
+import org.digitallibrary.mainframe.MainFrame;
 
 public class DetailsCoordinator {
-    private MainFrame frame;
+    private final MainFrame frame;
 
     public DetailsCoordinator(MainFrame frame) {
         this.frame = frame;

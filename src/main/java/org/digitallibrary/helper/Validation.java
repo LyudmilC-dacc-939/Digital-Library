@@ -1,19 +1,19 @@
-package helper;
+package org.digitallibrary.helper;
 
 import javax.swing.JLabel;
 import java.awt.Color;
 
 public class Validation {
-    private static Color complementaryColor = new Color(106, 143, 255);
+    private static final Color complementaryColor = new Color(106, 143, 255);
 
     public static boolean isValidUsername(String username, JLabel jLabel) {
-        if (username.length() >= 5 && username.length() <= 25) {
+        if (username.length() > 5 && username.length() <= 25) {
             return true;
         }
 
         jLabel.setForeground(complementaryColor);
         if (username.length() < 5) {
-            jLabel.setText("Username must be at least 5 characters long!");
+            jLabel.setText("Username must be at least 6 characters long!");
         }
         if (username.length() > 25) {
             jLabel.setText("Username must be at most 25 characters long!");

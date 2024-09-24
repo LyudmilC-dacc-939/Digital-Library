@@ -1,4 +1,4 @@
-package helper;
+package org.digitallibrary.helper;
 
 import javax.swing.JOptionPane;
 

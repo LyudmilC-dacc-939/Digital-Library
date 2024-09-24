@@ -1,4 +1,4 @@
-package model;
+package org.digitallibrary.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

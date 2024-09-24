@@ -1,19 +1,19 @@
-package repository;
+package org.digitallibrary.repository;
 
-import model.User;
+import org.digitallibrary.model.OldUser;
 
 import java.util.ArrayList;
 
 public class UserDatabase {
-    public static ArrayList<User> fetchUsers() {
-        ArrayList<User> users = new ArrayList<>();
-        User user1 = new User(
+    public static ArrayList<OldUser> fetchUsers() {
+        ArrayList<OldUser> oldUsers = new ArrayList<>();
+        OldUser oldUser1 = new OldUser(
                 "Test.John.Doe24",
                 "John",
                 "Doe",
                 "TestTest2222#",
                 "John5Doe@gmail.com");
-        users.add(user1);
-        return users;
+        oldUsers.add(oldUser1);
+        return oldUsers;
     }
 }

@@ -1,14 +1,12 @@
 package org.digitallibrary.model;
 
-import lombok.Builder;
 import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
 @Data
-@Builder
-public class User {
+public class OldUser {
 
     private String username;
     private String firstName;
@@ -18,11 +16,11 @@ public class User {
     private String eMail;
     private LocalDate date;
 
-    public User(String username,
-                String firstName,
-                String lastName,
-                String password,
-                String eMail) {
+    public OldUser(String username,
+                   String firstName,
+                   String lastName,
+                   String password,
+                   String eMail) {
         this.username = username;
         this.firstName = firstName;
         this.lastName = lastName;

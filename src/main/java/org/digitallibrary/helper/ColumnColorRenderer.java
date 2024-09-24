@@ -1,4 +1,4 @@
-package helper;
+package org.digitallibrary.helper;
 
 import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
@@ -6,8 +6,8 @@ import java.awt.Color;
 import java.awt.Component;
 
 public class ColumnColorRenderer extends DefaultTableCellRenderer {
-    private Color backgroundColor;
-    private Color foregroundColor;
+    private final Color backgroundColor;
+    private final Color foregroundColor;
 
     public ColumnColorRenderer(Color backgroundColor, Color foregroundColor) {
         this.backgroundColor = backgroundColor;

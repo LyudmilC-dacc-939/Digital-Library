@@ -1,7 +1,7 @@
-package mainframe.panel.details;
+package org.digitallibrary.mainframe.panel.details;
 
 
-import mainframe.MainFrame;
+import org.digitallibrary.mainframe.MainFrame;
 
 public class DetailsCoordinator {
     private final MainFrame frame;

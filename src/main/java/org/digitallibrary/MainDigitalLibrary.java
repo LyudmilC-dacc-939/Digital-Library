@@ -1,5 +1,6 @@
+package org.digitallibrary;
 
-import mainframe.MainFrame;
+import org.digitallibrary.mainframe.MainFrame;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.awt.Color;

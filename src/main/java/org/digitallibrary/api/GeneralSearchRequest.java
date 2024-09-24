@@ -1,7 +1,8 @@
-package api;
+package org.digitallibrary.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import model.Book;
+import lombok.Setter;
+import org.digitallibrary.model.Book;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -13,12 +14,13 @@ import java.net.URL;
 @Component
 public class GeneralSearchRequest {
 
-    @Value("${user.email}")
+    //@Value("${user.email}")
+    @Setter
     private String userEmail;
 
     public Book fetchGeneralSearch(String searchQuery) throws IOException {
         final HttpURLConnection connection = getHttpURLConnection(searchQuery);
-
+        System.out.println(userEmail);
         int responseCode = connection.getResponseCode();
         if (responseCode == HttpURLConnection.HTTP_OK) {
             InputStream responseStream = connection.getInputStream();

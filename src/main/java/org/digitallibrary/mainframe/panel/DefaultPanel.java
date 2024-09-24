@@ -1,9 +1,12 @@
-package mainframe.panel;
+package org.digitallibrary.mainframe.panel;
 
-import helper.MessageWindow;
-import helper.UIPersonalization;
+import org.digitallibrary.api.GeneralSearchRequest;
+import org.digitallibrary.helper.MessageWindow;
+import org.digitallibrary.helper.UIPersonalization;
 import lombok.RequiredArgsConstructor;
-import mainframe.MainFrame;
+import org.digitallibrary.mainframe.MainFrame;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -16,10 +19,14 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
 
+@Component
 @RequiredArgsConstructor
 public class DefaultPanel extends BasePanel {
     private JTextField usernameField;
     private JPasswordField passwordField;
+
+    @Autowired
+    GeneralSearchRequest generalSearchRequest;
 
     public DefaultPanel(final MainFrame frame) {
         super(frame);
@@ -46,7 +53,7 @@ public class DefaultPanel extends BasePanel {
         });
         add(usernameField);
 
-        //passwordField = new JPasswordField("passworD123#");
+        //passwordField = new JPasswordField("passwordD123#");
         passwordField = new JPasswordField("TestTest2222#");
         uiPersonalization.setJPasswordField(passwordField, 28);
         passwordField.setBounds(240, 415, 300, 50);
@@ -86,21 +93,23 @@ public class DefaultPanel extends BasePanel {
 
     private void loginAction() {
         String username = usernameField.getText().trim();
-        char[] password = passwordField.getPassword();  // Use getPassword() to retrieve the password
+        char[] password = passwordField.getPassword();
 
         if (username.isEmpty() || password.length == 0) {
             MessageWindow.popUpErrorMessage("Username and password cannot be empty.");
             return;
         }
-        // Convert char[] to String securely when needed
         String passwordStr = new String(password);
 
         boolean isLogged = frame.mainDataProvider.loginUser(username, passwordStr);
 
         java.util.Arrays.fill(password, '\0');
-        // Clear the char array after use
 
         if (isLogged) {
+            String userEmail = frame.mainDataProvider.getUserEmail(username);
+
+            generalSearchRequest.setUserEmail(userEmail);
+
             resetLoginFields();
             frame.mainCoordinator.moveToHomePanel();
         } else {
@@ -112,7 +121,4 @@ public class DefaultPanel extends BasePanel {
         usernameField.setText("Username...");
         passwordField.setText("");
     }
-
-
-
 }

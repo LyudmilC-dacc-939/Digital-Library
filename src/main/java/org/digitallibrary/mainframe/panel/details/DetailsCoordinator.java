@@ -4,7 +4,7 @@ package mainframe.panel.details;
 import mainframe.MainFrame;
 
 public class DetailsCoordinator {
-    private MainFrame frame;
+    private final MainFrame frame;
 
     public DetailsCoordinator(MainFrame frame) {
         this.frame = frame;

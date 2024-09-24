@@ -1,8 +1,10 @@
 
 import mainframe.MainFrame;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import java.awt.Color;
 
+@SpringBootApplication
 public class MainDigitalLibrary {
 
     public static void main(String[] args) {

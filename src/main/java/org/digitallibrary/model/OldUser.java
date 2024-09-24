@@ -1,9 +1,15 @@
-package model;
+package org.digitallibrary.model;
+
+import lombok.Builder;
+import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.UUID;
 
+@Data
+@Builder
 public class User {
+
     private String username;
     private String firstName;
     private String lastName;
@@ -26,63 +32,9 @@ public class User {
         this.date = LocalDate.now();
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public String getUid() {
-        return uid;
-    }
-
-    public String geteMail() {
-        return eMail;
-    }
-
-    public LocalDate getDate() {
-        return date;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public User setUsername(String username) {
-        this.username = username;
-        return this;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public User setPassword(String password) {
-        this.password = password;
-        return this;
-    }
-
-    public User setFirstName(String firstName) {
-        this.firstName = firstName;
-        return this;
-    }
-
-    public User setLastName(String lastName) {
-        this.lastName = lastName;
-        return this;
-    }
-
-    public User seteMail(String eMail) {
-        this.eMail = eMail;
-        return this;
-    }
-
     private String generateString() {
         return UUID.randomUUID().toString().replaceAll("-", "");
     }
-
 
     @Override
     public String toString() {

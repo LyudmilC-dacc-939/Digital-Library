@@ -6,6 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.digitallibrary.model.enums.UserRole;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
@@ -25,16 +26,16 @@ public class User implements UserDetails {
     @Column(unique = true)
     private Long id;
 
-    @Column(name = "username", nullable = false)
+    @Column(name = "username", unique = true, nullable = false)
     @Size(min = 6, max = 25, message = "Username must be between {min} and {max} characters")
     private String username;
 
-    @Column(name = "first_name", nullable = false)
-    @Size(min = 2, max = 50, message = "First name must be between {min} and {max} characters")
+    @Column(name = "first_name")
+    @Size(min = 2, max = 40, message = "First name must be between {min} and {max} characters")
     private String firstName;
 
-    @Column(name = "last_name", nullable = false)
-    @Size(min = 2, max = 80, message = "Last name must be between {min} and {max} characters")
+    @Column(name = "last_name")
+    @Size(min = 2, max = 60, message = "Last name must be between {min} and {max} characters")
     private String lastName;
 
     @Column(name = "email", unique = true, nullable = false)
@@ -47,6 +48,9 @@ public class User implements UserDetails {
 
     private Instant dateCreated;
 
+    @Enumerated(EnumType.STRING)
+    private UserRole userRole;
+
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
         return null;
@@ -54,7 +58,7 @@ public class User implements UserDetails {
 
     @Override
     public String getUsername() {
-        return emailAddress;
+        return this.username;
     }
 
     @Override

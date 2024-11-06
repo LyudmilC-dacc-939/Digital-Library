@@ -1,7 +1,7 @@
 package org.digitallibrary.service.Impl;
 
 import lombok.extern.slf4j.Slf4j;
-import org.digitallibrary.service.CsvReader;
+import org.digitallibrary.service.CsvReaderService;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +13,7 @@ import java.util.List;
 
 @Service
 @Slf4j
-public class CsvReaderServiceImpl implements CsvReader {
+public class CsvReaderServiceServiceImpl implements CsvReaderService {
 
     @Override
     public List<String[]> readAdminDetailsFromCsv(String filePath) throws IOException {

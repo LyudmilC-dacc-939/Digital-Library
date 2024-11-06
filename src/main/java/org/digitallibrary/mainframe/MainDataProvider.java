@@ -1,6 +1,7 @@
 package org.digitallibrary.mainframe;
 
 import lombok.Setter;
+import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.api.GeneralSearchRequest;
 import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.model.Book;
@@ -9,14 +10,17 @@ import org.digitallibrary.model.User;
 import org.digitallibrary.repository.UserDatabase;
 import org.digitallibrary.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Component;
 
+import javax.naming.InvalidNameException;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
+import java.util.List;
 
 @Component
 public class MainDataProvider {
-    private ArrayList<OldUser> oldUsers = UserDatabase.fetchUsers();
+    private List<OldUser> oldUsers = UserDatabase.fetchUsers();
     @Setter
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
@@ -90,7 +94,8 @@ public class MainDataProvider {
         for (Book.Doc doc : book.getDocs()) {
             // Check if title or author matches the search query
             if (doc.getTitle().toLowerCase().contains(formattedInput) ||
-                    (doc.getAuthor_name() != null && doc.getAuthor_name().stream().anyMatch(author -> author.toLowerCase().contains(formattedInput)))) {
+                    (doc.getAuthor_name() != null &&
+                            doc.getAuthor_name().stream().anyMatch(author -> author.toLowerCase().contains(formattedInput)))) {
                 addBookRow(doc);
             }
         }
@@ -114,7 +119,8 @@ public class MainDataProvider {
     }
 
     public String getUserEmail(String username) {
-        User user = userRepository.findByUsername(username);
-        return (user != null) ? user.getEmailAddress() : null;
+        User user = userRepository.findByUsername(username).orElseThrow(()->
+                new RecordNotFoundException(String.format("User with username: %s not found", username)));
+        return user.getEmailAddress();
     }
 }

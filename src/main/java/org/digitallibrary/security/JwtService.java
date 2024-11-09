@@ -6,6 +6,7 @@ import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.model.User;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -18,12 +19,14 @@ import java.util.function.Function;
 
 @Service
 @RequiredArgsConstructor
+@Slf4j
 public class JwtService {
 
-    @Value("${jwt.secret-key}")
+    @Value("${secretKey}")
     private String SECRET_KEY;
 
     public String extractUsername(String jwtToken) {
+        log.info("ExtractUsername method in JWTService:" + extractClaims(jwtToken, Claims::getSubject));
         return extractClaims(jwtToken, Claims::getSubject);
     }
 

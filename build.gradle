@@ -78,8 +78,21 @@ tasks.withType(JavaExec) {
     ]
 }
 
+def dbUsername = project.findProperty("dbUsername") ?: ""
+def dbPassword = project.findProperty("dbPassword") ?: ""
+def secretKey = project.findProperty("secretKey") ?: ""
+
 task runMain(type: JavaExec) {
     mainClass.set('MainDigitalLibrary')
     classpath = sourceSets.main.runtimeClasspath
     args = ['arg1', 'arg2']
+    systemProperty "dbUsername", dbUsername
+    systemProperty "dbPassword", dbPassword
+    systemProperty "secretKey", secretKey
+}
+
+test {
+    systemProperty "dbUsername", dbUsername
+    systemProperty "dbPassword", dbPassword
+    systemProperty "secretKey", secretKey
 }

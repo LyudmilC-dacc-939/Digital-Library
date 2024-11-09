@@ -35,9 +35,9 @@ public class AdminUserRunner implements CommandLineRunner {
         createAdminUser(userFromCsv);
     }
 
-    private void createAdminUser(List<String[]> usersFromCSV) throws Exception {
+    private void createAdminUser(List<String[]> usersFromCsv) throws Exception {
 
-        for (String[] userData : usersFromCSV) {
+        for (String[] userData : usersFromCsv) {
 
             User newUser_Admin = new User();
             newUser_Admin.setUsername(String.valueOf(userData[0]));

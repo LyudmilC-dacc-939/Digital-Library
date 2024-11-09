@@ -3,7 +3,10 @@ package org.digitallibrary.api;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import lombok.Setter;
 import org.digitallibrary.model.Book;
+import org.digitallibrary.security.ApplicationConfiguration;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -14,11 +17,12 @@ import java.net.URL;
 @Setter
 public class GeneralSearchRequest {
 
-    private String userEmail;
+    @Autowired
+    private ApplicationConfiguration applicationConfiguration;
 
     public Book fetchGeneralSearch(String searchQuery) throws IOException {
         final HttpURLConnection connection = getHttpURLConnection(searchQuery);
-        System.out.println(userEmail);
+        System.out.println(applicationConfiguration.getCurrentUserEmail());
         int responseCode = connection.getResponseCode();
         if (responseCode == HttpURLConnection.HTTP_OK) {
             InputStream responseStream = connection.getInputStream();
@@ -38,7 +42,8 @@ public class GeneralSearchRequest {
         connection.setRequestMethod("GET");
 
         // Using the injected userEmail in the User-Agent header
-        connection.setRequestProperty("User-Agent", "Digital Library/v1.1.0-alpha (" + userEmail + ")");
+        connection.setRequestProperty
+                ("User-Agent", "Digital Library/v1.1.0-alpha (" + applicationConfiguration.getCurrentUserEmail() + ")");
         connection.setRequestProperty("accept", "application/json");
         return connection;
     }

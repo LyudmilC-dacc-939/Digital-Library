@@ -26,7 +26,7 @@ public class User implements UserDetails {
     @Column(unique = true)
     private Long id;
 
-    @Column(name = "username", unique = true, nullable = false)
+    @Column(name = "username", unique = true, nullable = false, updatable = false)
     @Size(min = 6, max = 25, message = "Username must be between {min} and {max} characters")
     private String username;
 

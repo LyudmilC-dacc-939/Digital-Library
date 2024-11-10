@@ -1,7 +1,9 @@
 package org.digitallibrary.api;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.Getter;
 import lombok.Setter;
+import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.model.Book;
 import org.digitallibrary.security.ApplicationConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +16,9 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 @Component
+@Getter
 @Setter
+@Slf4j
 public class GeneralSearchRequest {
 
     @Autowired
@@ -30,6 +34,7 @@ public class GeneralSearchRequest {
 
             return mapper.readValue(responseStream, Book.class);
         } else {
+            log.error("GET Request for fetchGeneralSearch: " + responseCode);
             throw new IOException("GET request failed. Response Code: " + responseCode);
         }
     }

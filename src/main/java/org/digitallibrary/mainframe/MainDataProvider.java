@@ -1,5 +1,6 @@
 package org.digitallibrary.mainframe;
 
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.api.GeneralSearchRequest;
@@ -10,15 +11,14 @@ import org.digitallibrary.model.User;
 import org.digitallibrary.repository.UserDatabase;
 import org.digitallibrary.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.crossstore.ChangeSetPersister;
 import org.springframework.stereotype.Component;
 
-import javax.naming.InvalidNameException;
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
+@RequiredArgsConstructor
 public class MainDataProvider {
     private List<OldUser> oldUsers = UserDatabase.fetchUsers();
     @Setter
@@ -31,19 +31,6 @@ public class MainDataProvider {
 
     @Autowired
     private UserRepository userRepository;
-
-    public MainDataProvider(ArrayList<OldUser> oldUsers,
-                            DefaultTableModel booksTableModel,
-                            ArrayList<Book> books,
-                            Book book) {
-        this.oldUsers = oldUsers;
-        this.booksTableModel = booksTableModel;
-        this.books = books;
-        this.book = book;
-    }
-
-    public MainDataProvider() {
-    }
 
     public boolean loginUser(String username, String password) {
         for (OldUser oldUser : this.oldUsers) {

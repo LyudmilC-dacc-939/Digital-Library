@@ -106,9 +106,6 @@ public class DefaultPanel extends BasePanel {
         java.util.Arrays.fill(password, '\0');
 
         if (isLogged) {
-            String userEmail = frame.mainDataProvider.getUserEmail(username);
-
-            generalSearchRequest.setUserEmail(userEmail);
 
             resetLoginFields();
             frame.mainCoordinator.moveToHomePanel();

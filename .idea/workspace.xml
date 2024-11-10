@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f652b2a8-88af-4efe-a479-ec6ed291ab81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/CsvReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/Impl/CsvReaderServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/api/GeneralSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/api/GeneralSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/repository/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/repository/UserDatabase.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,6 +136,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Singleton" />
+        <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -332,7 +340,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Programs/Projects/Advance Academy/Module 12 Exercise -- Important (Panels & Patterns)",
+    "last_opened_file_path": "D:/Programs/Projects/Advance Academy/Advanced JAVA/toll-system-local-final",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -473,12 +481,20 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="MainDigitalLibrary" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Bar_System.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.digitallibrary.MainDigitalLibrary" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.1]" />
       <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.10]" />
       <item itemvalue="Gradle.Bar System [gradle wrapper --gradle-version 8.10]" />
       <item itemvalue="Gradle.Bar System [gradlew.bat wrapper --gradle-version 8.10]" />
       <item itemvalue="Gradle.Bar System [runMain]" />
+      <item itemvalue="Spring Boot.MainDigitalLibrary" />
     </list>
     <recent_temporary>
       <list>
@@ -565,6 +581,8 @@
       <workItem from="1726233633956" duration="513000" />
       <workItem from="1726234179939" duration="2549000" />
       <workItem from="1727110990030" duration="612000" />
+      <workItem from="1729873609310" duration="578000" />
+      <workItem from="1729877096635" duration="7574000" />
     </task>
     <servers />
   </component>

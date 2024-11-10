@@ -1,6 +1,8 @@
 package org.digitallibrary.mainframe;
 
+import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.api.GeneralSearchRequest;
 import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.model.Book;
@@ -13,10 +15,12 @@ import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
+import java.util.List;
 
 @Component
+@RequiredArgsConstructor
 public class MainDataProvider {
-    private ArrayList<OldUser> oldUsers = UserDatabase.fetchUsers();
+    private List<OldUser> oldUsers = UserDatabase.fetchUsers();
     @Setter
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
@@ -27,19 +31,6 @@ public class MainDataProvider {
 
     @Autowired
     private UserRepository userRepository;
-
-    public MainDataProvider(ArrayList<OldUser> oldUsers,
-                            DefaultTableModel booksTableModel,
-                            ArrayList<Book> books,
-                            Book book) {
-        this.oldUsers = oldUsers;
-        this.booksTableModel = booksTableModel;
-        this.books = books;
-        this.book = book;
-    }
-
-    public MainDataProvider() {
-    }
 
     public boolean loginUser(String username, String password) {
         for (OldUser oldUser : this.oldUsers) {
@@ -90,7 +81,8 @@ public class MainDataProvider {
         for (Book.Doc doc : book.getDocs()) {
             // Check if title or author matches the search query
             if (doc.getTitle().toLowerCase().contains(formattedInput) ||
-                    (doc.getAuthor_name() != null && doc.getAuthor_name().stream().anyMatch(author -> author.toLowerCase().contains(formattedInput)))) {
+                    (doc.getAuthor_name() != null &&
+                            doc.getAuthor_name().stream().anyMatch(author -> author.toLowerCase().contains(formattedInput)))) {
                 addBookRow(doc);
             }
         }
@@ -114,7 +106,8 @@ public class MainDataProvider {
     }
 
     public String getUserEmail(String username) {
-        User user = userRepository.findByUsername(username);
-        return (user != null) ? user.getEmailAddress() : null;
+        User user = userRepository.findByUsername(username).orElseThrow(()->
+                new RecordNotFoundException(String.format("User with username: %s not found", username)));
+        return user.getEmailAddress();
     }
 }

@@ -3,9 +3,10 @@ package org.digitallibrary.repository;
 import org.digitallibrary.model.OldUser;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class UserDatabase {
-    public static ArrayList<OldUser> fetchUsers() {
+    public static List<OldUser> fetchUsers() {
         ArrayList<OldUser> oldUsers = new ArrayList<>();
         OldUser oldUser1 = new OldUser(
                 "Test.John.Doe24",

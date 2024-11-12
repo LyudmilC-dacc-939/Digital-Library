@@ -4,24 +4,23 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.api.GeneralSearchRequest;
+import org.digitallibrary.dto.LoginRequest;
 import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.model.Book;
-import org.digitallibrary.model.OldUser;
 import org.digitallibrary.model.User;
-import org.digitallibrary.repository.UserDatabase;
 import org.digitallibrary.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
-import java.util.List;
 
 @Component
+@Setter
 @RequiredArgsConstructor
+//Controller properties
 public class MainDataProvider {
-    private List<OldUser> oldUsers = UserDatabase.fetchUsers();
-    @Setter
+
     private DefaultTableModel booksTableModel;
     private ArrayList<Book> books;
     private Book book;
@@ -32,13 +31,8 @@ public class MainDataProvider {
     @Autowired
     private UserRepository userRepository;
 
-    public boolean loginUser(String username, String password) {
-        for (OldUser oldUser : this.oldUsers) {
-            if (oldUser.getUsername().equals(username) && oldUser.getPassword().equals(password)) {
-                return true;
-            }
-        }
-        return false;
+    public String loginUser(LoginRequest loginRequest) {
+
     }
 
     public void fetchBooks(String query) {

@@ -1,5 +1,6 @@
 package org.digitallibrary.mainframe;
 
+import io.jsonwebtoken.ExpiredJwtException;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.digitallibrary.advice.exception.RecordNotFoundException;
@@ -9,7 +10,13 @@ import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.model.Book;
 import org.digitallibrary.model.User;
 import org.digitallibrary.repository.UserRepository;
+import org.digitallibrary.security.JwtService;
+import org.digitallibrary.service.Impl.CurrentUserImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
@@ -31,8 +38,55 @@ public class MainDataProvider {
     @Autowired
     private UserRepository userRepository;
 
-    public String loginUser(LoginRequest loginRequest) {
+    @Autowired
+    private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private JwtService jwtService;
+
+    @Autowired
+    CurrentUserImpl currentUserImpl;
+
+
+    public boolean validateToken(String jwtToken) {
+        try {
+            // Extract the email (or username) from the token
+            String email = jwtService.extractUsername(jwtToken);
+
+            // Load user details by email (username in this case)
+            UserDetails userDetails = userDetailsService.loadUserByUsername(email);
+
+            // Use the isValid method to validate the token
+            return jwtService.isValid(jwtToken, userDetails);
+
+        } catch (Exception e) {
+            System.err.println("Token validation failed: " + e.getMessage());
+            return false;
+        }
+    }
+
+    public String loginUser(LoginRequest loginRequest) {
+        try {
+            // Authenticates the user using username/email and password
+            Authentication authentication = authenticationManager.authenticate(
+                    new UsernamePasswordAuthenticationToken(
+                            loginRequest.getUsernameOrEmail(),
+                            loginRequest.getPassword())
+            );
+
+            //Retrieve user details after successful authentication
+            User user = userRepository.findByUsernameOrEmailAddress(
+                    loginRequest.getUsernameOrEmail(),
+                    loginRequest.getUsernameOrEmail()
+            ).orElseThrow(() -> new RecordNotFoundException(
+                    String.format("User with username or email: %s not found", loginRequest.getUsernameOrEmail())
+            ));
+
+            //return JWT token for User
+            return jwtService.generateJwtToken(user);
+        } catch (Exception e) {
+            throw new RuntimeException("Login failed" + e.getMessage());
+        }
     }
 
     public void fetchBooks(String query) {
@@ -100,7 +154,7 @@ public class MainDataProvider {
     }
 
     public String getUserEmail(String username) {
-        User user = userRepository.findByUsername(username).orElseThrow(()->
+        User user = userRepository.findByUsername(username).orElseThrow(() ->
                 new RecordNotFoundException(String.format("User with username: %s not found", username)));
         return user.getEmailAddress();
     }

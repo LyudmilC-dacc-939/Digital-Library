@@ -12,7 +12,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserServiceImpl implements UserService {
+public abstract class UserServiceImpl implements UserService {
 
     private final AuthenticationManager authenticationManager;
     private final UserRepository userRepository;

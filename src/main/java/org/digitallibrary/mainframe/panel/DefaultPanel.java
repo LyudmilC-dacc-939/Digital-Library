@@ -38,6 +38,7 @@ public class DefaultPanel extends BasePanel {
 
 
         //usernameField = new JTextField("Username...");
+        //this is for the time being it is not going to be like this i just put them automatically to log in for testing
         usernameField = new JTextField("Test.John.Doe24");
         uiPersonalization.setJTextField(usernameField, 24);
         usernameField.setBounds(240, 360, 300, 50);
@@ -102,11 +103,9 @@ public class DefaultPanel extends BasePanel {
         String passwordStr = new String(password);
 
         boolean isLogged = frame.mainDataProvider.loginUser(username, passwordStr);
-
         java.util.Arrays.fill(password, '\0');
 
         if (isLogged) {
-
             resetLoginFields();
             frame.mainCoordinator.moveToHomePanel();
         } else {

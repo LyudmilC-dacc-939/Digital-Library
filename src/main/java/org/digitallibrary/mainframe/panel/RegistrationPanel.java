@@ -176,10 +176,8 @@ public class RegistrationPanel extends BasePanel {
         createdUser.setLastName(lastNameTextField.getText());
         createdUser.setUsername(usernameTextField.getText());
         createdUser.setEmailAddress(emailAddressTextField.getText());
-        char [] password = passwordTextField.getPassword();
+        char[] password = passwordTextField.getPassword();
         createdUser.setPassword(Arrays.toString(password));
         return createdUser;
     }
-
-
 }

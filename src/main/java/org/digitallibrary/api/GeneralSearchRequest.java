@@ -7,6 +7,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.model.Book;
 import org.digitallibrary.security.ApplicationConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 
@@ -26,6 +28,7 @@ public class GeneralSearchRequest {
 
     public Book fetchGeneralSearch(String searchQuery) throws IOException {
         final HttpURLConnection connection = getHttpURLConnection(searchQuery);
+        connection.setRequestProperty("Authorization", "Bearer " + getJwtToken());
         System.out.println(applicationConfiguration.getCurrentUserEmail());
         int responseCode = connection.getResponseCode();
         if (responseCode == HttpURLConnection.HTTP_OK) {
@@ -51,5 +54,13 @@ public class GeneralSearchRequest {
                 ("User-Agent", "Digital Library/v1.1.0-alpha (" + applicationConfiguration.getCurrentUserEmail() + ")");
         connection.setRequestProperty("accept", "application/json");
         return connection;
+    }
+
+    private String getJwtToken() {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication != null && authentication.getCredentials() instanceof String) {
+            return (String) authentication.getCredentials();
+        }
+        return "";
     }
 }

@@ -6,12 +6,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.model.User;
 import org.digitallibrary.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -24,6 +24,8 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 public class ApplicationConfiguration {
 
     private final UserRepository userRepository;
+
+    private final CustomAuthenticationProvider customAuthenticationProvider;
 
     @Bean
     public UserDetailsService userDetailsService() {
@@ -55,5 +57,10 @@ public class ApplicationConfiguration {
         User currentUser = userRepository.findByUsername(username)
                 .orElseThrow(() -> new RecordNotFoundException(String.format("User with username: %s not found", username)));
         return currentUser.getEmailAddress();
+    }
+
+    @Bean
+    public void configure(AuthenticationManagerBuilder auth) {
+        auth.authenticationProvider(customAuthenticationProvider);
     }
 }

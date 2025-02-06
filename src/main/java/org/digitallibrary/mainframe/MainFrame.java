@@ -1,8 +1,11 @@
 package org.digitallibrary.mainframe;
 
+import org.springframework.stereotype.Component;
+
 import javax.swing.JFrame;
 import java.awt.FlowLayout;
 
+@Component
 public class MainFrame extends JFrame {
     public MainCoordinator mainCoordinator;
     public MainDataProvider mainDataProvider;
@@ -13,7 +16,7 @@ public class MainFrame extends JFrame {
         setSize(800, 800);
         setLayout(new FlowLayout());
         mainDataProvider = new MainDataProvider();
-        mainCoordinator = new MainCoordinator(this);
+        mainCoordinator = new MainCoordinator(this, this.mainDataProvider);
         mainCoordinator.moveToDefaultPanel();
         validate();
     }

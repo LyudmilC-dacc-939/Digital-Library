@@ -38,8 +38,8 @@ public class User implements UserDetails {
     @Size(min = 2, max = 60, message = "Last name must be between {min} and {max} characters")
     private String lastName;
 
-    @Column(name = "email", unique = true, nullable = false)
-    @Size(min = 5, max = 150, message = "Email address must be between {min} and {max} characters")
+    @Column(name = "email", nullable = false)
+    @Size(min = 11, max = 100, message = "Email address must be between {min} and {max} characters")
     private String emailAddress;
 
     @Column(name = "password", nullable = false)

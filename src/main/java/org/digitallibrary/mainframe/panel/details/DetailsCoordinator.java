@@ -21,8 +21,8 @@ public class DetailsCoordinator {
         this.frame = frame;
     }
 
-    public void moveToDetailsGeneralSearch(){
-        if(mainDataProvider.isTokenValid()){
+    public void moveToDetailsGeneralSearch() {
+        if (mainDataProvider.isTokenValid()) {
             DetailsGeneralSearchPanel detailsGeneralSearchPanel = new DetailsGeneralSearchPanel(frame);
             frame.setContentPane(detailsGeneralSearchPanel);
             frame.validate();

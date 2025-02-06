@@ -5,7 +5,12 @@ import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.helper.UIPersonalization;
 import lombok.RequiredArgsConstructor;
 import org.digitallibrary.mainframe.MainFrame;
+import org.digitallibrary.security.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Component;
 
 import javax.swing.JButton;
@@ -18,6 +23,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.Arrays;
+import java.util.Collections;
 
 @Component
 @RequiredArgsConstructor
@@ -27,6 +33,12 @@ public class DefaultPanel extends BasePanel {
 
     @Autowired
     GeneralSearchRequest generalSearchRequest;
+
+    @Autowired
+    AuthService authService;
+
+    @Autowired
+    private UserDetailsService userDetailsService;
 
     public DefaultPanel(final MainFrame frame) {
         super(frame);
@@ -96,20 +108,20 @@ public class DefaultPanel extends BasePanel {
         String username = usernameField.getText().trim();
         char[] password = passwordField.getPassword();
 
-        if (username.isEmpty() || password.length == 0) {
-            MessageWindow.popUpErrorMessage("Username and password cannot be empty.");
-            return;
-        }
-        String passwordStr = new String(password);
-
-        boolean isLogged = frame.mainDataProvider.loginUser(username, passwordStr);
-        java.util.Arrays.fill(password, '\0');
-
-        if (isLogged) {
-            resetLoginFields();
+        try {
+            String jwtToken = authService.authenticate(username, new String(password));
+            SecurityContextHolder.getContext().setAuthentication(
+                    new UsernamePasswordAuthenticationToken(
+                            userDetailsService.loadUserByUsername(username),
+                            jwtToken,
+                            Collections.emptyList()
+                    )
+            );
             frame.mainCoordinator.moveToHomePanel();
-        } else {
-            MessageWindow.popUpErrorMessage("Wrong username or password.");
+        } catch (AuthenticationException e) {
+            MessageWindow.popUpErrorMessage("Invalid credentials");
+        } finally {
+            Arrays.fill(password, '\0');
         }
     }
 

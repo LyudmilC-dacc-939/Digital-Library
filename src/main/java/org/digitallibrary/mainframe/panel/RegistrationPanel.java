@@ -1,13 +1,17 @@
 package org.digitallibrary.mainframe.panel;
 
+import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.helper.UIPersonalization;
 import org.digitallibrary.helper.Validation;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import org.digitallibrary.mainframe.MainFrame;
 import org.digitallibrary.model.User;
+import org.digitallibrary.model.enums.UserRole;
 import org.digitallibrary.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import javax.swing.JButton;
@@ -45,6 +49,9 @@ public class RegistrationPanel extends BasePanel {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     public RegistrationPanel(MainFrame frame) {
         super(frame);
@@ -164,20 +171,24 @@ public class RegistrationPanel extends BasePanel {
         boolean emailValid = Validation.isValidEmail(emailAddressTextField.getText(), validationErrorMessageLabel3);
 
         if (usernameValid && nameValid && passwordValid && emailValid) {
-            userRepository.save(newUser());
-            frame.mainCoordinator.moveToHomePanel();
+            try {
+                userRepository.save(newUser());
+                frame.mainCoordinator.moveToHomePanel();
+            } catch (DataIntegrityViolationException e) {
+                MessageWindow.popUpErrorMessage("Username or email already exists");
+            }
         }
     }
 
     private User newUser() {
-        User createdUser = new User();
-        createdUser.setDateCreated(Instant.now());
-        createdUser.setFirstName(firstNameTextField.getText());
-        createdUser.setLastName(lastNameTextField.getText());
-        createdUser.setUsername(usernameTextField.getText());
-        createdUser.setEmailAddress(emailAddressTextField.getText());
-        char[] password = passwordTextField.getPassword();
-        createdUser.setPassword(Arrays.toString(password));
-        return createdUser;
+        return User.builder()
+                .username(usernameTextField.getText())
+                .firstName(firstNameTextField.getText())
+                .lastName(lastNameTextField.getText())
+                .emailAddress(emailAddressTextField.getText())
+                .password(passwordEncoder.encode(new String(passwordTextField.getPassword())))
+                .userRole(UserRole.ROLE_USER)
+                .dateCreated(Instant.now())
+                .build();
     }
 }

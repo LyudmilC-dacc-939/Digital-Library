@@ -1,13 +1,11 @@
 package org.digitallibrary.mainframe;
 
-import io.jsonwebtoken.ExpiredJwtException;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.api.GeneralSearchRequest;
-import org.digitallibrary.dto.LoginRequest;
+
 import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.model.Book;
 import org.digitallibrary.model.User;
@@ -16,19 +14,18 @@ import org.digitallibrary.security.JwtService;
 import org.digitallibrary.service.Impl.CurrentUserImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.ArrayList;
+import java.util.Optional;
 
 @Component
 @Data
 @RequiredArgsConstructor
 @Slf4j
-//Controller properties
 public class MainDataProvider {
 
     private DefaultTableModel booksTableModel;
@@ -50,24 +47,26 @@ public class MainDataProvider {
     @Autowired
     CurrentUserImpl currentUserImpl;
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
     private String jwtToken;
 
     private UserDetails currentUserDetails;
 
-    public boolean loginUser(String usernameOrEmail, String password) {
-        try {
-            // Authenticate user
-            Authentication authentication = authenticationManager.authenticate(
-                    new UsernamePasswordAuthenticationToken(usernameOrEmail, password)
-            );
+    public boolean loginUser(String username, String password) {
+        Optional<User> user = userRepository.findByUsername(username);
+        return user.isPresent() && passwordEncoder.matches(password, user.get().getPassword());
+    }
 
-            // Retrieve user details and generate JWT token
-            this.currentUserDetails = (UserDetails) authentication.getPrincipal();
-            this.jwtToken = jwtService.generateJwtToken(currentUserImpl.extractCurrentUser());
-            return true;
-        } catch (Exception e) {
-            log.error("Login failed: " + e.getMessage());
-            return false;
+    public String getUserEmail(String username) {
+        Optional<User> userOptional = userRepository.findByUsername(username);
+
+        if (userOptional.isPresent()) {
+            User user = userOptional.get();
+            return user.getEmailAddress();
+        } else {
+            throw new RecordNotFoundException("User not found");
         }
     }
 
@@ -86,14 +85,14 @@ public class MainDataProvider {
                 MessageWindow.popUpErrorMessage();
             }
         } catch (Exception e) {
-            System.out.println(e.getLocalizedMessage());
+            log.error(e.getLocalizedMessage());
             MessageWindow.popUpErrorMessage();
         }
     }
 
     public void loadBooksModel() {
         if (book == null || book.getDocs() == null) {
-            System.err.println("Error: Book or Docs are null.");
+            log.error("Error: Book or Docs are null.");
             return;
         }
 
@@ -137,11 +136,5 @@ public class MainDataProvider {
 
     public Book getBookByIndex(int index) {
         return books.get(index);
-    }
-
-    public String getUserEmail(String username) {
-        User user = userRepository.findByUsername(username).orElseThrow(() ->
-                new RecordNotFoundException(String.format("User with username: %s not found", username)));
-        return user.getEmailAddress();
     }
 }

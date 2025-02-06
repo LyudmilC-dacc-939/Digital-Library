@@ -5,14 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f652b2a8-88af-4efe-a479-ec6ed291ab81" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/CsvReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/Impl/CsvReaderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/api/GeneralSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/api/GeneralSearchRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/helper/MessageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/helper/MessageWindow.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainDataProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/DefaultPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/DefaultPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/RegistrationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/RegistrationPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/details/DetailsCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/details/DetailsCoordinator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/OldUser.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/repository/UserDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/repository/UserDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/repository/UserDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -335,20 +343,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "ignore.virus.scanning.warn.message": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Programs/Projects/Advance Academy/Advanced JAVA/toll-system-local-final",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Programs/Projects/Advance Academy/Advanced JAVA/toll-system-local-final&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="helpers" />
@@ -482,7 +490,7 @@
       <method v="2" />
     </configuration>
     <configuration name="MainDigitalLibrary" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Bar_System.main" />
+      <module name="digital-library.main" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.digitallibrary.MainDigitalLibrary" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -505,13 +513,6 @@
         <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.1]" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="jdk-17.0.10-corretto-17.0.10-3183f394aec4-cf227e86" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -583,6 +584,8 @@
       <workItem from="1727110990030" duration="612000" />
       <workItem from="1729873609310" duration="578000" />
       <workItem from="1729877096635" duration="7574000" />
+      <workItem from="1735939215368" duration="1620000" />
+      <workItem from="1738684438959" duration="5749000" />
     </task>
     <servers />
   </component>

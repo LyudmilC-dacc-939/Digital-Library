@@ -27,7 +27,6 @@ public class CustomAuthenticationProvider implements AuthenticationProvider {
         var user = userRepository.findByUsernameOrEmailAddress(usernameOrEmail, usernameOrEmail)
                 .orElseThrow(() -> new BadCredentialsException("Invalid username or email"));
 
-        // Check password
         if (!passwordEncoder.matches(password, user.getPassword())) {
             throw new BadCredentialsException("Invalid password");
         }

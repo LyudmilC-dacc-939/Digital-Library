@@ -1,3 +1,48 @@
 spring:
     profiles:
         active: dev
+        # 'prod' or 'dev' according to needs
+
+---
+# Development profile
+spring:
+    profiles: dev
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5433/digital-library-dev
+        #The port of the database(5433) should be adjusted to the DB configuration of the computer it is run on,
+        #in my case that is 5433
+        username: root
+        password: BnwRB4amZE
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+server:
+    port: 8061
+
+jwt:
+    secret-key: ${secretKeyDev}
+    expiration: 43200000  # 12 hours in milliseconds
+
+---
+# Production profile
+spring:
+    profiles: prod
+    datasource:
+        driver-class-name: org.postgresql.Driver
+        url: jdbc:postgresql://localhost:5433/digital-library
+        username: ${dbUsername}
+        password: ${dbPassword}
+    jpa:
+        database-platform: org.hibernate.dialect.PostgreSQLDialect
+        show-sql: true
+        hibernate:
+            ddl-auto: update
+server:
+    port: 8275
+
+jwt:
+    secret-key: ${secretKey}
+    #Should be HMACSHA512 encoded to BASE64

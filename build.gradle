@@ -81,6 +81,7 @@ tasks.withType(JavaExec) {
 def dbUsername = project.findProperty("dbUsername") ?: ""
 def dbPassword = project.findProperty("dbPassword") ?: ""
 def secretKey = project.findProperty("secretKey") ?: ""
+def secretKeyDev = project.findProperty("secretKeyDev") ?: ""
 
 task runMain(type: JavaExec) {
     mainClass.set('MainDigitalLibrary')

@@ -1,6 +1,7 @@
 package org.digitallibrary.service;
 
 import org.digitallibrary.dto.LoginRequest;
+import org.digitallibrary.dto.RegisterRequest;
 import org.digitallibrary.model.User;
 
 public interface UserService {
@@ -9,5 +10,5 @@ public interface UserService {
 
     User findByEmail(String email);
 
-    void registerUser(UserRequest userRequest);
+    void registerUser(RegisterRequest registerRequest);
 }

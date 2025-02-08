@@ -6,7 +6,7 @@ plugins {
 }
 
 group = 'org.digitallibrary'
-version = '1.1.1-alpha'
+version = '1.1.2-alpha'
 
 repositories {
     mavenCentral()
@@ -54,6 +54,7 @@ tasks.named('test') {
 }
 
 application {
+    mainClass = 'src.main.java.org.digitallibrary.MainDigitalLibrary'
     mainClassName = 'MainDigitalLibrary'
 }
 
@@ -90,10 +91,12 @@ task runMain(type: JavaExec) {
     systemProperty "dbUsername", dbUsername
     systemProperty "dbPassword", dbPassword
     systemProperty "secretKey", secretKey
+    systemProperty "secretKeyDev", secretKeyDev
 }
 
 test {
     systemProperty "dbUsername", dbUsername
     systemProperty "dbPassword", dbPassword
     systemProperty "secretKey", secretKey
+    systemProperty "secretKeyDev", secretKeyDev
 }

@@ -26,34 +26,50 @@ public class GeneralSearchRequest {
     @Autowired
     private ApplicationConfiguration applicationConfiguration;
 
-    public Book fetchGeneralSearch(String searchQuery) throws IOException {
-        final HttpURLConnection connection = getHttpURLConnection(searchQuery);
-        connection.setRequestProperty("Authorization", "Bearer " + getJwtToken());
-        System.out.println(applicationConfiguration.getCurrentUserEmail());
-        int responseCode = connection.getResponseCode();
-        if (responseCode == HttpURLConnection.HTTP_OK) {
-            InputStream responseStream = connection.getInputStream();
-            ObjectMapper mapper = new ObjectMapper();
+    public String buildApiUrl(String query, String searchType) {
+        String baseUrl = "https://openlibrary.org/search.json?";
+        String formattedQuery = query.trim().replaceAll("\\s", "+");
 
-            return mapper.readValue(responseStream, Book.class);
-        } else {
-            log.error("GET Request for fetchGeneralSearch: " + responseCode);
-            throw new IOException("GET request failed. Response Code: " + responseCode);
+        switch (searchType) {
+            case "Title":
+                return baseUrl + "q=" + formattedQuery;
+            case "Author":
+                return baseUrl + "author=" + formattedQuery;
+            case "Subject":
+                return baseUrl + "subject=" + formattedQuery;
+            default:
+                return baseUrl + "q=" + formattedQuery;
         }
     }
 
-    private HttpURLConnection getHttpURLConnection(String searchQuery) throws IOException {
-        String formattedStringInput = searchQuery.trim().replaceAll("\\s", "+");
-        String urlString = String.format("https://openlibrary.org/search.json?q=%s", formattedStringInput);
-
-        HttpURLConnection connection = (HttpURLConnection) new URL(urlString).openConnection();
+    /**
+     * Builds and returns an HttpURLConnection for the given search query.
+     */
+    private HttpURLConnection getHttpURLConnection(String apiUrl) throws IOException {
+        HttpURLConnection connection = (HttpURLConnection) new URL(apiUrl).openConnection();
         connection.setRequestMethod("GET");
 
-        // Using the injected userEmail in the User-Agent header
-        connection.setRequestProperty
-                ("User-Agent", "Digital Library/v1.1.0-alpha (" + applicationConfiguration.getCurrentUserEmail() + ")");
+        connection.setRequestProperty(
+                "User-Agent", "Digital Library/v1.1.0-alpha (" + applicationConfiguration.getCurrentUserEmail() + ")");
         connection.setRequestProperty("accept", "application/json");
         return connection;
+    }
+
+    /**
+     * Fetches and parses book data from the Open Library Search API.
+     */
+    public Book fetchGeneralSearch(String query, String searchType) throws IOException {
+        String apiUrl = buildApiUrl(query, searchType);
+
+        HttpURLConnection connection = getHttpURLConnection(apiUrl);
+        if (connection.getResponseCode() == HttpURLConnection.HTTP_OK) {
+            InputStream responseStream = connection.getInputStream();
+            ObjectMapper mapper = new ObjectMapper();
+            return mapper.readValue(responseStream, Book.class);
+        } else {
+            log.error("GET Request for fetchGeneralSearch: " + connection.getResponseCode());
+            throw new IOException("GET request failed. Response Code: " + connection.getResponseCode());
+        }
     }
 
     private String getJwtToken() {

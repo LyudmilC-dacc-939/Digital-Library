@@ -1,9 +1,11 @@
 package org.digitallibrary.advice.exception;
 
-import java.util.InputMismatchException;
-
-public class RecordNotFoundException extends InputMismatchException {
+public class RecordNotFoundException extends RuntimeException {
     public RecordNotFoundException(String message) {
         super(message);
+    }
+
+    public RecordNotFoundException(String message, Throwable cause) {
+        super(message, cause);
     }
 }

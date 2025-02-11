@@ -6,7 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.advice.exception.RecordNotFoundException;
 import org.digitallibrary.api.GeneralSearchRequest;
 
-import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.model.Book;
 import org.digitallibrary.model.User;
 import org.digitallibrary.repository.UserRepository;
@@ -14,11 +13,14 @@ import org.digitallibrary.security.JwtService;
 import org.digitallibrary.service.Impl.CurrentUserImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
 import javax.swing.table.DefaultTableModel;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Optional;
 
@@ -54,39 +56,34 @@ public class MainDataProvider {
 
     private UserDetails currentUserDetails;
 
+    //todo: The login method from defaultPanel must be moved in the MainDataProvider
+    // in the place of the method below?
     public boolean loginUser(String username, String password) {
         Optional<User> user = userRepository.findByUsername(username);
         return user.isPresent() && passwordEncoder.matches(password, user.get().getPassword());
     }
 
-    public String getUserEmail(String username) {
-        Optional<User> userOptional = userRepository.findByUsername(username);
-
-        if (userOptional.isPresent()) {
-            User user = userOptional.get();
-            return user.getEmailAddress();
-        } else {
-            throw new RecordNotFoundException("User not found");
-        }
+    public void logoutUser() {
+        SecurityContextHolder.clearContext();
     }
 
     public boolean isTokenValid() {
-        return jwtToken != null && currentUserDetails != null && jwtService.isValid(jwtToken, currentUserDetails);
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        if (authentication == null || !(authentication.getCredentials() instanceof String)) {
+            return false; // No token found
+        }
+
+        String jwtToken = (String) authentication.getCredentials();
+        return jwtService.isValid(jwtToken, (UserDetails) authentication.getPrincipal());
     }
 
-    public void fetchBooks(String query) {
-        try {
-            this.book = generalSearchRequest.fetchGeneralSearch(query);
+    public void fetchBooks(String query, String searchType) throws IOException {
+        this.book = generalSearchRequest.fetchGeneralSearch(query, searchType);
 
-            if (this.book != null && this.book.getDocs() != null) {
-                loadBooksModel();
-            } else {
-                System.err.println("Error: Book or Docs are null.");
-                MessageWindow.popUpErrorMessage();
-            }
-        } catch (Exception e) {
-            log.error(e.getLocalizedMessage());
-            MessageWindow.popUpErrorMessage();
+        if (this.book != null && this.book.getDocs() != null) {
+            loadBooksModel();
+        } else {
+            System.err.println("Error: Book or Docs are null.");
         }
     }
 
@@ -107,20 +104,7 @@ public class MainDataProvider {
         }
     }
 
-    public void searchQuery(String searchedBook) {
-        booksTableModel.setRowCount(0);
-        String formattedInput = searchedBook.trim().toLowerCase();
-
-        for (Book.Doc doc : book.getDocs()) {
-            // Check if title or author matches the search query
-            if (doc.getTitle().toLowerCase().contains(formattedInput) ||
-                    (doc.getAuthor_name() != null &&
-                            doc.getAuthor_name().stream().anyMatch(author -> author.toLowerCase().contains(formattedInput)))) {
-                addBookRow(doc);
-            }
-        }
-    }
-
+    //todo: for now I will keep this method even though its not called anywhere...
     private void addBookRow(Book.Doc doc) {
         String[] row = new String[4];
 
@@ -132,9 +116,5 @@ public class MainDataProvider {
         row[3] = doc.getEdition_count() != 0 ? String.valueOf(doc.getEdition_count()) : "Unknown Edition Count";
 
         booksTableModel.addRow(row);
-    }
-
-    public Book getBookByIndex(int index) {
-        return books.get(index);
     }
 }

@@ -7,8 +7,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.digitallibrary.model.Book;
 import org.digitallibrary.security.ApplicationConfiguration;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 
@@ -70,13 +68,5 @@ public class GeneralSearchRequest {
             log.error("GET Request for fetchGeneralSearch: " + connection.getResponseCode());
             throw new IOException("GET request failed. Response Code: " + connection.getResponseCode());
         }
-    }
-
-    private String getJwtToken() {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        if (authentication != null && authentication.getCredentials() instanceof String) {
-            return (String) authentication.getCredentials();
-        }
-        return "";
     }
 }

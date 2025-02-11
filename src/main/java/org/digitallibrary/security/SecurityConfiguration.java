@@ -3,6 +3,7 @@ package org.digitallibrary.security;
 import jakarta.servlet.Filter;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
+import org.digitallibrary.helper.MessageWindow;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.access.hierarchicalroles.RoleHierarchyImpl;
@@ -67,5 +68,11 @@ public class SecurityConfiguration {
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
             response.getWriter().write("Authentication is required to access this resource");
         });
+    }
+
+    @Bean
+    public AuthenticationEntryPoint authenticationEntryPoint() {
+        return (request, response, ex) ->
+                MessageWindow.popUpErrorMessage("Authentication required");
     }
 }

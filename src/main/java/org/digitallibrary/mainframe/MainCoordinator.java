@@ -1,10 +1,13 @@
 package org.digitallibrary.mainframe;
 
 import lombok.AllArgsConstructor;
+import org.digitallibrary.helper.MessageWindow;
 import org.digitallibrary.mainframe.panel.DefaultPanel;
 import org.digitallibrary.mainframe.panel.GeneralSearchPanel;
 import org.digitallibrary.mainframe.panel.HomePanel;
 import org.digitallibrary.mainframe.panel.RegistrationPanel;
+import org.digitallibrary.mainframe.panel.DetailsGeneralSearchPanel;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -14,6 +17,20 @@ public class MainCoordinator {
     private final MainFrame frame;
 
     private final MainDataProvider mainDataProvider;
+
+    public boolean checkTokenValidity() {
+        if (!mainDataProvider.isTokenValid()) {
+            handleTokenExpiration();
+            return true;
+        }
+        return false;
+    }
+
+    public void handleTokenExpiration() {
+        MessageWindow.popUpErrorMessage("Your session has expired. Please log in again.");
+        SecurityContextHolder.clearContext();
+        moveToDefaultPanel();
+    }
 
     public void moveToDefaultPanel() {
         DefaultPanel defaultPanel = new DefaultPanel(frame);
@@ -28,24 +45,34 @@ public class MainCoordinator {
     }
 
     public void moveToHomePanel() {
-        if (mainDataProvider.isTokenValid()) {
-            HomePanel homePanel = new HomePanel(frame);
-            frame.setContentPane(homePanel);
-            frame.validate();
-        } else {
-            //todo: Redirect to log in if token is invalid
-            moveToDefaultPanel();
+        if (checkTokenValidity()) {
+            return;
         }
+        HomePanel homePanel = new HomePanel(frame);
+        frame.setContentPane(homePanel);
+        frame.validate();
     }
 
     public void moveToGeneralSearchPanel() {
-        if (mainDataProvider.isTokenValid()) {
-            GeneralSearchPanel generalSearchPanel = new GeneralSearchPanel(frame);
-            frame.setContentPane(generalSearchPanel);
-            frame.validate();
-        } else {
-            //todo: Redirect to log in if token is invalid
-            moveToDefaultPanel();
+        if (checkTokenValidity()) {
+            return;
         }
+        GeneralSearchPanel generalSearchPanel = new GeneralSearchPanel(frame);
+        frame.setContentPane(generalSearchPanel);
+        frame.validate();
+    }
+
+    public void moveToDetailsGeneralSearchPanel() {
+        if (checkTokenValidity()) {
+            return;
+        }
+        DetailsGeneralSearchPanel detailsGeneralSearchPanel = new DetailsGeneralSearchPanel(frame);
+        frame.setContentPane(detailsGeneralSearchPanel);
+        frame.validate();
+    }
+
+    public void logout() {
+        mainDataProvider.logoutUser();
+        moveToDefaultPanel();
     }
 }

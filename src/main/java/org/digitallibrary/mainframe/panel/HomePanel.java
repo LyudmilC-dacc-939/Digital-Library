@@ -15,7 +15,6 @@ public class HomePanel extends BasePanel {
     private JButton subjectsButton;
     private JButton searchInsideButton;
     private JButton searchByIdentifierButton;
-    //PartnerButton^
     private JButton coversButton;
     private JButton recentChangesButton;
     private JButton userListsButton;
@@ -146,6 +145,11 @@ public class HomePanel extends BasePanel {
         });
         add(backButton);
 
-
+        JButton logoutButton = new JButton("Logout");
+        uiPersonalization.setJButton(logoutButton, 25);
+        logoutButton.setBounds(600, 695, 150, 50);
+        logoutButton.addActionListener(e -> frame.mainCoordinator.logout());
+        add(logoutButton);
     }
 }
+

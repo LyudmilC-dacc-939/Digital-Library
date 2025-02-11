@@ -5,22 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f652b2a8-88af-4efe-a479-ec6ed291ab81" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/DetailsGeneralSearchPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/MainDigitalLibrary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/MainDigitalLibrary.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/api/GeneralSearchRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/api/GeneralSearchRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/helper/MessageWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/helper/MessageWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainCoordinator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainDataProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/MainDataProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/DefaultPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/DefaultPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/RegistrationPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/RegistrationPanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/details/DetailsCoordinator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/details/DetailsCoordinator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/OldUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/repository/UserDatabase.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/CustomAuthenticationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/CustomAuthenticationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/GeneralSearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/GeneralSearchPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/HomePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/HomePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/mainframe/panel/details/DetailsGeneralSearchPanel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/runner/AdminUserRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/runner/AdminUserRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/AuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/JwtService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/digitallibrary/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,11 +45,16 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Bar System" type="f1a62948:ProjectNode" />
+                <item name="digital-library" type="f1a62948:ProjectNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Bar System" type="f1a62948:ProjectNode" />
+                <item name="digital-library" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="digital-library" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -343,20 +347,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Programs/Projects/Advance Academy/Advanced JAVA/toll-system-local-final&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Bar System [runMain].executor": "Run",
+    "Gradle.Build Bar System.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "Spring Boot.MainDigitalLibrary.executor": "Run",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Programs/Projects/Advance Academy/Advanced JAVA/toll-system-local-final",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="helpers" />
@@ -366,107 +373,7 @@
       <recent name="D:\Programs\Projects\Advance Academy\Bar System\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Bar System [runMain]">
-    <configuration name="Bar System [./gradlew wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="./gradlew" />
-            <option value="wrapper" />
-            <option value="--gradle-version" />
-            <option value="8.10" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Bar System [./gradlew wrapper --gradle-version 8.1]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="./gradlew" />
-            <option value="wrapper" />
-            <option value="--gradle-version" />
-            <option value="8.1" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Bar System [gradle wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="gradle" />
-            <option value="wrapper" />
-            <option value="--gradle-version" />
-            <option value="8.10" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Bar System [gradlew.bat wrapper --gradle-version 8.10]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="gradlew.bat" />
-            <option value="wrapper" />
-            <option value="--gradle-version" />
-            <option value="8.10" />
-          </list>
-        </option>
-        <option name="vmOptions" value="" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.MainDigitalLibrary">
     <configuration name="Bar System [runMain]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -497,20 +404,12 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.1]" />
-      <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.10]" />
-      <item itemvalue="Gradle.Bar System [gradle wrapper --gradle-version 8.10]" />
-      <item itemvalue="Gradle.Bar System [gradlew.bat wrapper --gradle-version 8.10]" />
       <item itemvalue="Gradle.Bar System [runMain]" />
       <item itemvalue="Spring Boot.MainDigitalLibrary" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Bar System [runMain]" />
-        <item itemvalue="Gradle.Bar System [gradlew.bat wrapper --gradle-version 8.10]" />
-        <item itemvalue="Gradle.Bar System [gradle wrapper --gradle-version 8.10]" />
-        <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.10]" />
-        <item itemvalue="Gradle.Bar System [./gradlew wrapper --gradle-version 8.1]" />
       </list>
     </recent_temporary>
   </component>
@@ -586,6 +485,7 @@
       <workItem from="1729877096635" duration="7574000" />
       <workItem from="1735939215368" duration="1620000" />
       <workItem from="1738684438959" duration="5749000" />
+      <workItem from="1739203405865" duration="6807000" />
     </task>
     <servers />
   </component>
